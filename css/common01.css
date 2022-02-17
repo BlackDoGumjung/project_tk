@@ -1,0 +1,15 @@
+header div.inner_wrap { display: flex; }
+header::before { content:""; display: none; position: fixed; left:0; top: 0; z-index: 101; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.65); }
+header.on::before { display: block; }
+
+header h1 { position: absolute; top: 5.8%; left: 12%; width: 114px; height: 85px; z-index: 100; }
+header h1 a { display: block; width: 100%; height: 100%; background: url("../images/tk_logo.png") no-repeat; background-size: cover; }
+header div.search_wrap { position: absolute; top: 2.3438vw; right: 7.4479vw; z-index: 100; }
+header div.search_wrap button.btn_search { width: 41px; height: 41px; background: url("../images/one_source_multi.png") no-repeat 0 -30px; }
+header div.menu_wrap { position: absolute; top: 2.3438vw; right: 4.4271vw; z-index: 110; }
+header div.menu_wrap button { width: 38px; height: 32px; background: url("../images/one_source_multi.png") no-repeat -41px -34px;}
+header.on div.menu_wrap button { position: fixed; top: 2.3438vw; right: 4.4271vw; z-index: 110; background: url("../images/one_source_multi.png") no-repeat -80px -36px; z-index: 110; } 
+
+nav { width: 78vw; height: 100vh; position: fixed; left: 100%; top: 0; background: #1d1d1d; z-index: 101; padding: 100px 3.90625vw 20px 3.90625vw; transform: translateX(0%); transition: transform 0.3s;}
+header.on nav { transform: translateX(-100%); }
+
