@@ -1,558 +1,693 @@
 /*+++++++++++++++++++++++ media query +++++++++++++++++++++++*/
-/* index.html */
+/* css_responsive_web.html */
 
 
 
-/* ===========mobile(start)============== */
-@media screen and (max-width: 767px) {
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!THRILLER KINGDOM MOBILE!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
-	/*++++section.visual++++*/
+/* ====== mobile(start) ====== */
+@media screen and (max-width: 767px)  {
 
-	section.visual { overflow: hidden; position: relative; width: 100vw; height: 520px; margin: 50px 0 70px 0; }
-	section.visual div.slides_wrap { position: relative; width: 100%; height: 100%; }
-	section.visual div.slide { display: none; position: absolute; left:0; top: 0; z-index: 1; width: 100%; height: 100%; }
-	section.visual div.slide:nth-of-type(1) { display: block; }
-
-	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
-	section.visual div.info_00 { position: absolute; left: 14%; bottom: 20%; z-index: 11; width: 71.8750vw; margin-bottom: 20px; text-align: center; }
-	section.visual div.info_00 img { margin: 0 auto; width: 172px; object-fit: cover; }
-	section.visual div.info_00 p.content { font-size: 0.875em; color: #fff; line-height: 1.5; }
-
-	section.visual div.info_01 { position: absolute; left: 25%; bottom: 20%; z-index: 11; width: 52.0833vw; margin-bottom: 20px; text-align: center; }
-	section.visual div.info_01 img { width: 60px; object-fit: cover; margin: 0 auto 10px; } 
-	section.visual div.info_01 p.content { font-size: 0.875em; color: #fff; font-weight: bold; border-bottom: 1px solid #085a8c; }
-
-	section.visual div.info_02 { position: absolute; left: 7%; top: 8%; z-index: 11; width: 83%; }
-	section.visual div.info_02 h2.title { font-size: 1.563em; color: #085a8c; margin-bottom: 30px; }
-	section.visual div.info_02 p.interviewee { font-size: 2em; color: #333; font-weight: bold; margin-bottom: 30px; }
-	section.visual div.info_02 p.content { color: #333; } 
-	
-	section.visual div.pagination { position: absolute; left: 0; bottom: 0; z-index: 20; width: 100%; margin-bottom: 20px; text-align: center; }
-	section.visual div.pagination > button { display: inline-block; padding: 0 0.5625em; }
-	section.visual div.pagination > button > span { display: inline-block; width: 11px; height: 11px; border-radius: 50%; background: #fff; }
-	section.visual div.pagination > button.active > span { background: #085a8c; }
-
-
-
-/*++++section.dramas++++*/
-
-	section.dramas { overflow: hidden; padding-bottom: 40px; margin-bottom: 70px; }
-	section.dramas div.inner_wrap { width: 87.5vw; }
-	section.dramas div.inner_wrap_02 { width: 90.625vw; }
-	section.dramas div.view_mask { overflow: hidden; position: relative; width: 100%; }
-	section.dramas div.view_mask ul { width: 600%; }
-	section.dramas div.view_mask li { float: left; width: 16.66667%; padding: 0 1.5625vw; text-align: center; }
-	section.dramas div.view_mask li > a { position: relative; display: block; width: 100%; height:100%; }
-	section.dramas div.view_mask li a img { display: block; width: 100%; height: 100%; }
-	section.dramas div.view_mask li > a::after { content:""; position: absolute; right:0; bottom: 0; padding: 0.188em 1.250em; font-size: 1em; background: #085a8c; color: #fff; text-align: center; }
-	section.dramas div.view_mask li > a.label_01::after { content:"지상파"; }
-	section.dramas div.view_mask li > a.label_02::after  { content:"케이블"; }
-	section.dramas div.view_mask li > a.label_03::after  { content:"제3세계"; }
-	section.dramas div.view_mask li > a.label_04::after  { content:"웹드라마"; }
-	section.dramas div.view_mask li > a.label_05::after  { content:"기타"; }
-	
-	section.dramas div.view_mask li > a > img { display: block; width: 100%; height: auto; margin-bottom: 0.25em; }
-	section.dramas div.view_mask li > p.title { font-size: 1.125em; color: #333;  }
-	section.dramas div.view_mask li > p.genre { font-size: 0.938em;  color: #333; }
-	section.dramas div.view_mask li > p.epi { font-size: 0.875em;  color: #333; }
-	section.dramas div.view_mask li > div.stars { margin-top: 10px; font-size: 1em; color: red; }
-
-	section.dramas button.dir_btns > span { color: #333; }
-	
-
-
-/*++++section.original++++*/
-
-	section.original { overflow: hidden; position: relative; width: 100vw; height: 600px; margin-bottom: 70px; }
-	section.original h2 { display: inline-block; margin-bottom: 20px; }
-	
-	section.original div.infos_wrap { width: 100%; height: 300px; background: #fff; margin-bottom: 20px; }
-	section.original div.infos_wrap div.inner_wrap_half { position: relative; margin: 0 6.25vw; }
-	section.original div.infos_wrap div.info_wrap { position: absolute; display: none; }
-	section.original div.infos_wrap div.info_wrap:first-of-type { display: block; }
-
-	section.original div.pagination { display: inline-block; position: absolute; right: 0; top: 6%; }
-	section.original div.pagination button.dots { height: 27px; }
-	section.original div.pagination button span { width: 27px; height: 27px; padding: 1px 8px; margin-left: 10px; border-radius: 50%; background: #ccc; color: #6e6e6e;}
-	section.original div.pagination button.active > span { background: #085a8c; color: #fff; } 
-	section.original div.pagination button:hover > span { background: #085a8c; color: #fff;}
-
-	section.original div.info_wrap p.desc { display: none; }	
-	section.original div.info_wrap p.genre { margin-top: 25px; width: 100%; } 
-	section.original div.info_wrap p.genre > span { padding: 0.125em 20.88749px; border: 1px solid #130c0e; } 
-	section.original div.info_wrap p.genre > span:nth-of-type(1) { background: #130c0e; color: #fff; }
-	
-	section.original div.imgs_wrap { position: relative; width: 100vw; height: 50vh; }
-	section.original div.imgs_wrap div.img_wrap { position: absolute; width: 100%; height: 100%; display: none; }
-	section.original div.imgs_wrap div.img_wrap:first-of-type { display: block; }
-	section.original div.imgs_wrap div.img_wrap img { display: block; width: 100%; height: 300px; object-fit: cover; }
-
-	section.original a.btn_more { position: absolute; right: -90px; bottom: -310px; z-index: 500; border-color: #fff; color: #fff; }
-
-
-
-/*++++section.schdule++++*/
-	
-	section.schedule { overflow: hidden; margin-bottom: 70px; }
-	section.schedule div.inner_wrap { overflow: hidden; width: 87.5vw; height: 190px; margin : 0 6.25vw; }
-	section.schedule h2 { overflow: hidden; float: left; margin-bottom: 20px; }
-	section.schedule a.btn_more { float: right; }
-	section.schedule div.view_mask { clear: both; }
-	section.schedule ul { width: 300%; }
-	section.schedule ul > li { position: relative; display: inline-block; width: 33.3333%; } 
-	section.schedule img { display: inline-block; width: 100%; height: 100%; object-fit: cover;}
-	section.schedule li > p.hours { position: absolute; width : 100%; left: 20px; top: 15px; color: #fff;}
-	section.schedule li > p.title { position: absolute; left: 20px; top: 35px; color: #fff; font-size: 1.125em; }
-	section.schedule li:nth-of-type(2) > p.hours { color: #130c0e; }
-	section.schedule li:nth-of-type(2) > p.title { color: #130c0e; }
-
-
-
-
-
-/*++++section.trailers++++*/
-	section.trailers { overflow: hidden; position: relative; padding-bottom: 40px; margin-bottom: 70px; }
-	section.trailers div.inner_wrap { width: 87.5vw; }
-	section.trailers div.inner_wrap_02 { width: 90.6250vw; }
-	section.trailers h2 { margin-bottom: 20px; }
-	section.trailers div.view_mask { overflow: hidden; width: 100%; }
-	section.trailers div.view_mask ul { width: 600%; }
-	section.trailers div.view_mask li { float: left; width: 16.666667%; padding: 0 1.5625vw; }
-	section.trailers div.view_mask li div.video_wrap { overflow: hidden; position: relative; width: 100%; height: 100%; }
-	section.trailers div.view_mask li video { display: block; width: 100%; height: 100%; }
-	section.trailers div.view_mask li div.video_wrap > span { position: absolute; right: 10px; bottom: 10px; border-radius: 5px; padding: 0.125em 1.125em; font-size: 0.875em; background: #085a8c; color: #fff; } 
-
-
-	section.trailers div.info_wrap p.desc { font-size: 1em; margin-bottom: 5px;} 
-	section.trailers div.info_wrap p.title { font-size: 0.938em; color: #085a8c; }
-	section.trailers div.info_wrap p.count { display: inline-block; width: 100%; font-size: 0.813em; color: #666; }
-	section.trailers div.info_wrap p.count span:nth-of-type(1) { padding-right: 10px; }
-	section.trailers div.info_wrap p.count span:nth-of-type(2) { position: relative; padding-left: 10px; }
-	section.trailers div.info_wrap p.count span:nth-of-type(2)::before { content: ""; position: absolute; left: 0; top: 4px; width: 1px; height: 12px; background: #666; }
-	
-	section.trailers button.dir_btns > span { color: #333; }
-	
-	
-
-
-/*++++section.dapluspick++++*/
-
-	section.dapluspick { overflow: hidden; margin-bottom: 70px; }
-	
-	section.dapluspick ul { width: 100%; height: 140.6250vw; margin-top: 20px; }
-	section.dapluspick ul > li { overflow: hidden; position: relative; width: 100%; height: 46.8750vw; z-index:0; }
-		
-	section.dapluspick ul > li:nth-child(1) { background: url("../images/img_index_da+s_01_M.jpg") no-repeat; background-size: cover; }
-	section.dapluspick ul > li:nth-child(2) { background: url("../images/img_index_da+s_02_M.jpg") no-repeat; background-size: cover; }
-	section.dapluspick ul > li:nth-child(3) { background: url("../images/img_index_da+s_03_M.jpg") no-repeat; background-size: cover; }
-
-	section.dapluspick img.title { display: none; }
-	section.dapluspick div.info { position: absolute; left:0; top: 37%; z-index: 4; width: 100%; height: 33.3333%; text-align: center; }
-	section.dapluspick p.desc { margin-bottom: 0.875em; font-size: 0.875em; color: #fff; filter: drop-shadow(0 0 0.1em #999); }
-	section.dapluspick li a.btn_more { border-color : #fff; color: #fff; filter: drop-shadow(0 0 0.1em #999); } 
- 
-
-
- /*++++section.event++++*/
-
-	section.event { position: relative; overflow: hidden; padding-bottom: 40px; margin-bottom: 70px;}
-	section.h2 { margin-bottom: 20px; }
-	section.event div.inner_wrap { overflow: hidden; width: 87.5vw; margin : 0 6.25vw; } 
-	section.event ul { width: 600%; }
-	section.event ul li { float: left; width: 16.666667%; }
-	section.event ul li a { display: block; width: 100%; height: 100%; }
-	section.event ul li img { display: block; width: 87.5vw; height: 74.6875vw; object-fit: cover; } 
-	section.event button.dir_btns[class ~= "prev"] { left: 1.250em; }
-	section.event button.dir_btns[class ~= "next"] { right: 1.250em; }
-	section.event button.dir_btns > span { color: #333; }
-
-
-}
-
-/* ===========mobile(end)============== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===========tablet(start)============== */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-
-	/*++++section.visual++++*/
-
-
-	section.visual { overflow: hidden; position: relative; width: 100vw; height: calc(100vh - 80px); margin: 81px 0 100px 0; }
-	section.visual div.slides_wrap { position: relative; width: 100%; height: 100%; }
-	section.visual div.slide { display: none; position: absolute; left:0; top: 0; z-index: 1; width: 100%; height: 100%; }
-	section.visual div.slide:nth-of-type(1) { display: block; }
-
-	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
-	section.visual div.info_00 { position: absolute; left: 6%; bottom: 20%; z-index: 11; width: 52.0833vw; }
-	section.visual div.info_00 h2 img { width: 352px; object-fit: cover; margin-bottom: 30px; }
-	section.visual div.info_00 p.content { font-size: 1.25em; color: #fff; line-height: 1.5; }
-
-	section.visual div.info_01 { position: absolute; left: 15%; bottom: 27%; z-index:11; width: 71.6146vw; text-align: center; border-bottom: 3px solid #085a8c; }
-	section.visual div.info_01 h2 img { width: 120px; object-fit: cover; margin: 0 auto 15px; } 
-	section.visual div.info_01 p.content { font-size: 2.188em; color: #fff; font-weight: bold; }
-
-	section.visual div.info_02 { position: absolute; left: 7%; top: 8%; z-index: 11; width: 52.0833vw; }
-	section.visual div.info_02 h2.title { font-size: 3.75em; color: #085a8c; margin-bottom: 60px; }
-	section.visual div.info_02 p.interviewee { font-size: 4.688em; color: #333; font-weight: bold; margin-bottom: 60px; }
-	section.visual div.info_02 p.content { font-size: 1.25em; color: #333; } 
-
-	section.visual div.pagination { position: absolute; left: 0; bottom: 0; z-index: 20; width: 100%; margin-bottom: 20px; text-align: center; }
-	section.visual div.pagination > button { display: inline-block; padding: 0.625em 0.938em; }
-	section.visual div.pagination > button > span { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #fff; }
-	section.visual div.pagination > button.active > span { background: #085a8c; }
-	
-
-
-/*++++section.dramas++++*/
-
-	section.dramas { overflow: hidden; padding-bottom: 50px; margin-bottom: 100px; }
-	section.dramas div.inner_wrap { width: 93.489583vw; }
-	section.dramas div.inner_wrap_02 { width: 95.3125vw; }
-	section.dramas div.view_mask { overflow: hidden; position: relative; width: 100%; }
-	section.dramas div.view_mask ul { width: 200%; }
-	section.dramas div.view_mask li { float: left; width: 16.66667%; padding: 0 0.9114583vw; }
-	section.dramas div.view_mask li > a { position: relative; }
-	section.dramas div.view_mask li > a::after { content:""; position: absolute; right:0; bottom: 0; padding: 0.188em 1.250em; font-size: 1em; background: #085a8c; color: #fff; text-align: center; }
-	section.dramas div.view_mask li > a.label_01::after { content:"지상파"; }
-	section.dramas div.view_mask li > a.label_02::after  { content:"케이블"; }
-	section.dramas div.view_mask li > a.label_03::after  { content:"제3세계"; }
-	section.dramas div.view_mask li > a.label_04::after  { content:"웹드라마"; }
-	section.dramas div.view_mask li > a.label_05::after  { content:"기타"; }
-	
-	section.dramas div.view_mask li a { display: block; width: 100%; height: 100%; }
-	section.dramas div.view_mask li a img { display: block; width: 100%; height: auto; margin-bottom: 0.25em; }
-	section.dramas div.view_mask li > p.title { font-size: 1.25em; color: #333;  }
-	section.dramas div.view_mask li > p.genre { font-size: 1em;  color: #333; }
-	section.dramas div.view_mask li > p.epi { font-size: 0.938em;  color: #333; }
-	section.dramas div.view_mask li > div.stars { margin-top: 10px; font-size: 1.125em; color: red; }
-
-
-	
-
-
-/*++++section.original++++*/
-
-	section.original { overflow: hidden; position: relative; width: 100vw; height: 600px; margin-bottom: 100px; }
-	section.original h2 { display: inline-block; margin: 30px 80px 40px 0; }
-	
-	section.original div.infos_wrap { float: left; position: absolute; top:0; z-index: 10; width: 50%; height:100%; background: #fff; }
-	section.original div.infos_wrap div.inner_wrap_half { position: relative; width: 85%; height: 100%; margin-left: 3.2552vw; }
-	section.original div.infos_wrap div.info_wrap { position: absolute; display: none; }
-	section.original div.infos_wrap div.info_wrap:first-of-type { display: block; }
-
-	section.original div.pagination { display: inline-block; position: absolute; right: 0; top: 7%; }
-	section.original div.pagination span { padding: 2px 10px; margin-right: 10px; border-radius: 50%; background: #ccc; color: #6e6e6e;}
-	section.original div.pagination button.active > span { background: #085a8c; color: #fff; } 
-	section.original div.pagination button:hover > span { background: #085a8c; color: #fff;}
-
-	section.original div.info_wrap p.desc { margin-top: 1.250em; }	
-	section.original div.info_wrap p.genre { margin-top: 40px;} 
-	section.original div.info_wrap p.genre > span { padding: 0.125em 1.563em; border: 1px solid #130c0e; } 
-	section.original div.info_wrap p.genre > span:nth-of-type(1) { background: #130c0e; color: #fff; }
-	
-	section.original div.imgs_wrap { float: right; position: absolute; z-index: 0; right: 0; width: 50vw; height: 100%; }
-	section.original div.imgs_wrap div.img_wrap { display: none; width:100%; height: 100%; }
-	section.original div.imgs_wrap div.img_wrap:first-of-type { display: block; }
-	section.original div.imgs_wrap div.img_wrap img { display: block; width: 100%; height:100%; object-fit: cover; }
-
-	section.original a.btn_more { position: absolute; left: 0; bottom: -85px; }
-
-
-
-
-/*++++section.schdule++++*/
-	
-	section.schedule { margin-bottom: 100px; }
-	section.schedule h2 { overflow: hidden; float: left; margin: 0 3.2552vw 20px 3.2552vw; }
-	section.schedule a.btn_more { float: right; margin: 0 3.2552vw 20px 3.2552vw; }
-	section.schedule div.view_mask { clear: both; margin: 0 3.2552vw; }
-	section.schedule ul > li { position: relative; display: inline-block; width: 33.3333%; } 
-	section.schedule img { display: inline-block; width: 100%; height:100%; object-fit: cover;}
-	section.schedule li > p.hours { position: absolute; left: 10px; top: 10px; width: 100%; color: #fff;}
-	section.schedule li > p.title { position: absolute; left: 10px; top: 30px; width: 100%; color: #fff; font-size: 1.125em; }
-	section.schedule li:nth-of-type(2) > p.hours { color: #130c0e; }
-	section.schedule li:nth-of-type(2) > p.title { color: #130c0e; }
-
-
-
-
-
-/*++++section.trailers++++*/
-
-	section.trailers { overflow: hidden; position: relative; padding-bottom: 50px; margin-bottom: 100px; }
-	section.trailers div.inner_wrap { width: 93.489583vw; }
-	section.trailers div.inner_wrap_02 { width: 95.3125vw; }
-	section.trailers h2 { margin-bottom: 20px; }
-	section.trailers div.view_mask { overflow: hidden; width: 100%; }
-	section.trailers div.view_mask ul { width: 300%; }
-	section.trailers div.view_mask li { float: left; width: 16.666667%; padding: 0 0.9114583vw; }
-	section.trailers div.view_mask li div.video_wrap { overflow: hidden; position: relative; width: 100%; height: 100%; }
-	section.trailers div.view_mask li video { display: block; width: 100%; height: 100%; }
-	section.trailers div.view_mask li div.video_wrap > span { position: absolute; right: 10px; bottom: 10px; border-radius: 5px; padding: 0.125em 1.125em; font-size: 0.875em; background: #085a8c; color: #fff; } 
-	
-	section.trailers div.info_wrap p.desc { font-size: 1.125em; margin-bottom: 5px;} 
-	section.trailers div.info_wrap p.title { font-size: 1em; color: #085a8c; }
-	section.trailers div.info_wrap p.count { display: inline-block; width: 100%; font-size: 0.875em; color: #666; }
-	section.trailers div.info_wrap p.count span:nth-of-type(1) { padding-right: 10px; }
-	section.trailers div.info_wrap p.count span:nth-of-type(2) { position: relative; padding-left: 10px; }
-	section.trailers div.info_wrap p.count span:nth-of-type(2)::before { content: ""; position: absolute; left: 0; top: 4px; width: 1px; height: 12px; background: #666; }
-	
-	
-	
-
-
-/*++++section.dapluspick++++*/
-
-	section.dapluspick { overflow: hidden; margin-top: 100px; margin-bottom: 100px; }
-	section.dapluspick h2 { margin: 0 3.2552vw; }
-	
-	section.dapluspick ul { width: 100%; height: 78.1250vw; margin-top: 20px; }
-	section.dapluspick ul > li { overflow: hidden; position: relative; width: 100%; height: 26.0417vw; z-index:0; }
-		
-	section.dapluspick ul > li:nth-child(1) { background: url("../images/img_index_da+s_01_T.jpg") no-repeat center center; background-size: cover; color: #fff; }
-	section.dapluspick ul > li:nth-child(2) { background: url("../images/img_index_da+s_02_T.jpg") no-repeat center center; background-size: cover; }
-	section.dapluspick ul > li:nth-child(3) { background: url("../images/img_index_da+s_03_T.jpg") no-repeat center center; background-size: cover; color: #fff; }
-
-	section.dapluspick img.title { display: none; }
-	section.dapluspick div.info { position: absolute; left:0; top: 45%; z-index: 4; width: 100%; height: 33.3333%; text-align: center; }
-	section.dapluspick p.desc { margin-bottom: 1em; font-size: 1em; color: #fff; }
-	section.dapluspick li a.btn_more { border: 1px solid #fff; color: #fff; } 
- 
-
-
- /*++++section.event++++*/
-
-	section.event { overflow: hidden; margin: 0 3.2552vw; padding-bottom: 50px; margin-bottom: 100px;}
-	section.h2 { margin-bottom: 20px; }
-	section.event div.inner_wrap { position: relative;}
-
-	section.event ul { width: 200%; }
-	section.event ul li { float: left; width: 16.666667%; }
-	section.event ul li a { display: block; width: 100%; height: 100%; }
-	section.event ul li img { display: block; width: 100%; object-fit: cover; } 
-
-	section.event button.dir_btns[class ~= "prev"] { left: 0; }
-	section.event button.dir_btns[class ~= "next"] { right: 0; }
-
-
-
-}
-
-
-/* ===========tablet(end)============== */
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-/* ===========desktop(start)============== */
-@media screen and (min-width: 1025px) {
+h2 { font-family: "Heebo-Medium"; font-size: 1.25em; }
+.title_wrap { position: relative; width: 100%; max-width: 1132px; margin: 0 auto; }
+.title_wrap > h2 { display: inline-block; position: relative; }
+.title_wrap > h2::before { content:""; display: block; position: absolute; left: -5px; top: 50%; width: 100vw; height: 1px; background: #1d1d1d; transform: translateX(-100%); }
+.title_wrap > h2::after { content:""; display: block; position: absolute; right: -5px; top: 50%; width: 100vw; height: 1px; background: #1d1d1d; transform: translateX(100%); }
+button.more > a { padding: 0.375em 0.625em; background: #fff; font-family: "Heebo-Medium"; color: #1d1d1d; }
 
 
 /*++++section.visual++++*/
 
-	section.visual { position: relative; width: 100%; height: calc(100vh - 120px); margin: 120px 0 120px 0; }
-	section.visual div.slides_wrap { position: relative; width: 100%; height: 100%; }
-	section.visual div.slide { position: absolute; display: none; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
-	section.visual div.slide:nth-child(1) { display: block; }
-	section.visual div.slide div.rel { width: 100%; height: 100%; }
+section.visual { overflow: hidden; clear: both; position: relative; width: 100%; height: 100vh; }
+section.visual video { width: 100%; height: 100vh; object-fit: cover; z-index: 1; } 
+section.visual div.ticket_info { position: absolute; top: 74vh; left: 6.2500vw; z-index: 10; transition: all 1s; animation-name: fade_in_up; animation-duration: 2s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+section.visual h2 { font-size: 3.188em; font-family: "Heebo-Black"; line-height: 0.9; color: #fff; }
+section.visual p { width: 50%; }
+section.visual p > a { display: block; padding: 5px; width: 100%; border-radius: 3px; background: #fff; font-family: "Heebo-Medium"; font-size: 1em; text-align: center; }
 
-	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
-	section.visual div.info_00 { position: absolute; right: 10%; top: 45%; z-index: 11; width: 400px; height: 200px; text-align: right; }
-	section.visual div.info_00 img { width: 352px; height: 124px; object-fit: cover; margin-left: 50px; }
-	section.visual div.info_00 p.content { font-size: 1.5em; color: #fff; line-height: 1.5; }
+@keyframes fade_in_up {
+	from { 
+	transform: translateY(50px); opacity: 0;
+	}
 
-	section.visual div.info_01 { position: absolute; left: 19%; top: 24%; z-index:11; width: 450px; height: 200px; border-bottom: 3px solid #085a8c;}
-	section.visual div.info_01 img { width: 208px; height: 98px; object-fit: cover; margin-bottom: 10px; } 
-	section.visual div.info_01 p.content { font-size: 1.875em; color: #fff; }
-
-	section.visual div.info_02 { position: absolute; left: 24%; top: 20%; z-index: 11; width: 480px; height: 280px;}
-	section.visual div.info_02 h2.title { font-size: 2.5em; color: #085a8c; margin-bottom: 20px; }
-	section.visual div.info_02 p.interviewee { font-size: 4em; color: #333; font-weight: bold; margin-bottom: 20px; }
-	section.visual div.info_02 p.content { font-size: 1.5em; color: #fff; } 
+	to { 
+	transform: translateY(0px); opacity: 1;
+	}
+}
 	
-	section.visual div.pagination { position: absolute; left: 0; bottom: 0; z-index: 20; width: 100%; margin-bottom: 30px; text-align: center; }
-	section.visual div.pagination > button { display: inline-block; padding: 10px 15px; }
-	section.visual div.pagination > button > span { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #fff; }
-	section.visual div.pagination > button:hover > span { background: #085a8c; }
-	section.visual div.pagination > button.active > span { background: #085a8c; }
-	
+/*++++section.visual++++*/
 
 
 
-/*++++section.dramas++++*/
-
-	section.dramas { overflow: hidden; margin-bottom: 120px; }
-	section.dramas div.view_mask { overflow: hidden; position: relative; width: 1200px; margin: 0 auto; }
-	section.dramas div.view_mask ul { width: 150%; }
-	section.dramas div.view_mask li { float: left; position: relative; width: 16.66667%; padding: 0 10px; }
-	section.dramas div.view_mask li > a::after { content:""; position: absolute; right:0; bottom:0; z-index: 3; padding: 3px 20px; font-size: 1em; background: #085a8c; color: #fff; text-align: center; }
-	section.dramas div.view_mask li > a.label_01::after { content:"지상파"; }
-	section.dramas div.view_mask li > a.label_02::after { content:"케이블"; }
-	section.dramas div.view_mask li > a.label_03::after { content:"제3세계"; }
-	section.dramas div.view_mask li > a.label_04::after { content:"웹드라마"; }
-	section.dramas div.view_mask li > a.label_05::after { content:"기타"; }
-	
-	section.dramas div.view_mask li > a { display: block; position: relative; width: 100%; height: 100%; }
-	section.dramas div.view_mask li > a::before { transition: all 0.6s; }
-	section.dramas div.view_mask li > a:hover::before { content: ""; display: block; position: absolute; z-index: 2; width: 100%; height: 100%; border: 5px solid #085a8c; }
-	section.dramas div.view_mask li a img { position: relative; display: block; width: 100%; height: 100%; }
-	section.dramas div.view_mask li > p.title { font-size: 1.25em; color: #333; }
-	section.dramas div.view_mask li > p.genre { font-size: 1em;  color: #333; }
-	section.dramas div.view_mask li > p.epi { font-size: 0.938em;  color: #333; }
-	section.dramas div.view_mask li > div.stars { margin-top: 10px; font-size: 1em; color: #db1537; }
-
-	section.dramas button.dir_btns { position: absolute; top: 0; z-index: 10; width: 60px; height: 429px; }
-	section.dramas button.prev { left: 0; background: url("../images/btn_common_prev_D.png") no-repeat center center; background-size: 22px; }
-	section.dramas button.prev span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px;  }
-	section.dramas button.next { right: 0; background: url("../images/btn_common_next_D.png") no-repeat center center; background-size: 22px; }
-	section.dramas button.next span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
+/*++++section.whatsnew++++*/
 
 
-/*++++section.original++++*/
+section.whatsnew { overflow: hidden; margin: 70px 0 30px 0; }
+section.whatsnew h2 { margin-left: 6.2500vw; margin-bottom: 30px; }
+section.whatsnew div.content_wrap { margin: 0 6.2500vw; }
+  
+section.whatsnew div.view_mask { overflow: hidden; position: relative; width: 100%; height: 50vh; margin: 0 auto; }
+section.whatsnew ul.slides_wrap { position: absolute; left: 0; width: 600%; }
+section.whatsnew li.slides { position: relative; float: left; width: 87.5vw; height: 35vh; }
 
-	section.original { overflow: hidden; position: relative; height: 700px; margin-bottom: 120px; }
-	section.original h2 { display: inline-block;  margin: 30px 0 15px 0; }
-	
-	
-	section.original div.infos_wrap { float: left; position: absolute; top: 100px; z-index: 10; width: 50%; height: 500px; background: #fff; }
-	section.original div.infos_wrap div.inner_wrap_half { position: relative; float: right; width: 30.7292vw; height: 100%; }
-	section.original div.infos_wrap div.info_wrap { display: none; position: absolute; }
-	section.original div.infos_wrap div.info_wrap:first-of-type { display: block; }
+section.whatsnew li.slides img { display: block; width: 100%; height: 100%; object-fit: fill; }
+section.whatsnew li.slides div.info { display: inline-block; position: absolute; left: 0; top: 80%; width: 100%; height: 20%; background: rgba(29,29,29,0.7); color: #fff; }
+section.whatsnew li.slides h3.title { display: inline-block; position: relative; width: 100%; margin-left: 20px; font-family: "Heebo-Medium"; font-size: 1em; transform: translateY(50%); }
+section.whatsnew li.slides h3.title::after { content:""; position: absolute; right: -7px; top: 1px; bottom: 0; width: 1px; height: 26px; background: #fff; }
+section.whatsnew li.slides p.desc { display: none; }
+ 
+section.whatsnew button.dir_btns { position: absolute; z-index: 10; width: 48px; height: 100px; transform: translateY(-50%); }
+section.whatsnew button.prev { left: 0; top: 35%; background: url("../images/arrow_pre_T.png") no-repeat center center; background-size: 80%; }
+section.whatsnew button.next { right: 0; top: 35%; background: url("../images/arrow_next_T.png") no-repeat center center; background-size: 80%; }
 
-	
-	section.original div.pagination { position: absolute; top: 8%; right: 10%; }
-	section.original div.pagination button { margin-left: 20px; }
-	section.original div.pagination button span { width: 0; height: 0; padding: 3px 10px; border-radius: 50%; background: #ccc; color: #6e6e6e; }
-	section.original div.pagination button.active > span { background: #085a8c; color: #fff; } 
-	section.original div.pagination button:hover > span { background: #085a8c; color: #fff;}
-
-	section.original div.info_wrap p.desc { margin: 20px 30px 30px 0; }	
-	section.original div.info_wrap p.genre { margin-top: 1.250em;} 
-	section.original div.info_wrap p.genre > span { padding: 0.125em 1.563em; border: 1px solid #130c0e; } 
-	section.original div.info_wrap p.genre > span:nth-of-type(1) { background: #130c0e; color: #fff; }
-	section.original div.info_wrap img { display:block; width: 155px; height: 155px; object-fit: cover; }
-	
-	section.original div.imgs_wrap { width: 100%; height: 100%; } 
-	section.original div.imgs_wrap div.img_wrap { width: 100%; height: 100%; display: none; }
-	section.original div.imgs_wrap div.img_wrap:first-of-type { display: block; }
-	section.original div.imgs_wrap div.img_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; } 
-	
-	section.original a.btn_more { position: absolute; left: 0; bottom: -110px; margin: 0 30px 30px 0; }
+section.whatsnew div.pagination { position: absolute; left: 0; bottom: 45px; z-index: 20; width: 100%; text-align: center; }
+section.whatsnew div.pagination button { display: inline-block; padding: 0 10px;  }
+section.whatsnew div.pagination button > span { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid #1d1d1d; background: #fff; }
+section.whatsnew div.pagination button:hover > span { background: #1d1d1d; }
+section.whatsnew div.pagination button.active > span { background: #1d1d1d; }
 
 
-/*++++section.schedule++++*/
-	
-	section.schedule { overflow: hidden; margin-bottom: 120px; }
-	section.schedule h2 { float: left; }
-	section.schedule a.btn_more { float: right; }
-	section.schedule div.view_mask { clear: both; }
-	section.schedule ul > li { position: relative; display: inline-block; width: 33.3333%; } 
-	section.schedule ul > li > img { display: inline-block; width: 100%; object-fit: cover;}
-	section.schedule li > p.hours { position: absolute; left: 10px; top: 10px; color: #fff;}
-	section.schedule li > p.title { position: absolute; left: 10px; top: 30px; color: #fff; font-size: 1.125em; }
-	section.schedule li:nth-of-type(2) > p.hours { color: #130c0e; }
-	section.schedule li:nth-of-type(2) > p.title { color: #130c0e; }
+/*++++section.whatsnew++++*/
 
 
 
+/*++++section.rides++++*/
+
+section.rides { overflow: hidden; padding: 70px 0; background: url(../images/img_index_rides_bg.jpg) no-repeat center center; background-size: fill; background-attachment: fixed; }
+section.rides h2 { margin-bottom: 30px; margin-left: 6.2500vw; }
+section.rides div.inner_wrap { margin: 0 6.2500vw; }
+
+section.rides div.xxx { position: relative; width: 87.5vw; }
+section.rides div.xxx div.img_wrap img::after { content:""; position: absolute; left:0; top: 0; display: block; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); } 
+section.rides div.xxx div.img_wrap { overflow: hidden; position: relative; display: block; width: 100%; height: 90%;  }
+section.rides div.xxx div.img_wrap img { display: block; width: 100%; height: 200px; object-fit: cover; z-index:1; }
+
+section.rides div.xxx h3.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:5; font-family:"Heebo-Black"; font-size: 2.188em; font-weight: bold; color: #fff; }
+section.rides div.xxx > button { position: absolute; left: 4%; bottom: 8%; z-index:5; }
+section.rides div.xxx > p.content { display: none; }
+
+section.rides div.angry_w { width: 87.5vw; height: 380px; }
+section.rides div.angry_w div.img_wrap { overflow: hidden; position: relative; width: 100%; height: 200px; }
+section.rides div.angry_w div.img_wrap img { position: relative; display: inline-block; width: 100%; height: 100%; object-fit: cover; z-index:1; }
+section.rides div.angry_w div.img_wrap img::after { content:""; position: absolute; display: block; left:0; top:0; width: 100%; height:100%; object-fit: cover; z-index:1; background: rgba(63, 125, 211, 0.4); }
+
+section.rides div.angry_w h3.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); line-height: 1.2; z-index:5; font-family:"Heebo-Medium"; font-size: 2em; font-weight: bold; color: #fff;}
+section.rides div.angry_w div.aw_content { position: relative; height: 180px; background: #3f7dd3; padding: 1.250em; line-height: 1.2;}
+section.rides div.angry_w div.aw_content::before { content:""; position: absolute; left: 50%; top: -25px; transform:translateX(-50%); z-index: 10; width: 0; height: 0; border-style: solid; border-width: 0 25.5px 25px 25.5px; border-color: transparent transparent #3f7dd3 transparent;}
+section.rides div.angry_w div.aw_content p { font-size: 0.875em; }
+section.rides div.angry_w div.aw_content button.more { position:absolute; right: 15px; bottom: 19px; }
+
+section.rides div.tt_wrap { display: flex; flex-direction: column-reverse; width: 87.5vw; height: 320px; }
+section.rides div.tt_content { position: relative; display: inline-block; width: 100%; height: 180px; line-height: 1.2; background: #ffa3a3; padding: 1.250em; vertical-align: top; }
+section.rides div.tt_content img { position: relative; display: inline-block; width: 100%; z-index: 1; vertical-align: top; }
+section.rides div.tt_content::after { content:""; position: absolute; left: 50%; top: -12%;transform: translateX(-50%); z-index: 10; width: 0; height: 0; border-style: solid; border-width: 0 25.5px 25px 25.5px; border-color: transparent transparent #ffa3a3 transparent; }
+section.rides div.tt_content p { font-size: 0.875em; }
+
+section.rides div.tt { overflow: hidden; position: relative; display: inline-block; width: 100%; height: 200px;  }
+section.rides div.tt img { display: block; width: 100%; height: 100%; object-fit: cover;}
+section.rides div.tt img::before { content:""; position: absolute; left: 0; top:0; z-index:1; display: block; width: 100%; height: 100%; background: rgba(255, 163, 163, 0.3); } 
+section.rides div.tt h3.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); line-height: 1.2; text-align: center; z-index:5; font-family:"Heebo-Medium"; font-size: 2em; font-weight: bold; color: #fff;}
+section.rides div.tt_content > button.more { position:absolute; right: 15px; bottom: 19px; }
+
+/*++++section.rides++++*/
 
 
-/*++++section.trailers*/
-	section.trailers { overflow: hidden; margin-bottom: 120px; }
-	section.trailers div.view_mask { overflow: hidden; position: relative; width: 1200px; margin: 0 auto; }
-	section.trailers div.view_mask ul { width: 166.66667%; }
-	section.trailers div.view_mask li { float: left; position: relative; width: 20%; padding: 0 10px; }
-	section.trailers div.view_mask li div.video_wrap { overflow: hidden; position: relative; width: 100%; height: 100%; }
-	section.trailers div.view_mask li div.video_wrap span { position:absolute; right:10px; bottom: 10px; font-size: 0.875em; padding: 1px 16px; border-radius: 5px; background: #085a8c; color: #fff; }
-	section.trailers div.view_mask li video { display: block; width: 100%; height: 100%; transition: transform 0.6s; }
-	section.trailers div.view_mask li:hover video { transform: scale(1.06); }
-	
-	section.trailers div.info_wrap p.desc { font-size: 1.125em; margin-bottom: 5px; } 
-	section.trailers div.info_wrap p.title { font-size: 1em; color: #085a8c; }	
-	section.trailers div.info_wrap p.count { display: inline-block; font-size: 0.875em; color: #666; }
-	section.trailers div.info_wrap p.count span:nth-of-type(1) { padding-right: 10px; }
-	section.trailers div.info_wrap p.count span:nth-of-type(2) { position: relative; padding-left: 10px; }
-	section.trailers div.info_wrap p.count span:nth-of-type(2)::before { content: ""; position: absolute; left: 0; top: 4px; width: 1px; height: 12px; background: #666; }
+/*++++section.attr start++++*/
+
+section.attr { overflow: hidden; position: relative; background: #1d1d1d; padding-top: 70px; height: 428px; }
+section.attr div.inner_wrap { padding: 0 6.25vw; }
+section.attr h2 { color: #fff; margin-left: 6.25vw; margin-bottom: 30px;}
+section.attr h2::before { content: ""; background-color: #fff;}
+section.attr h2::after { content: ""; background-color: #fff;}
+
+section.attr ul.attr_flex { position: absolute; left: 5%; width: 300%; height: 229px; }
+section.attr ul.attr_flex li.attr { display: inline-block; position: relative; width: 87.5vw; height: 100%; margin: 0 5px; }
+
+section.attr img { display: block; width: 100%; height: 100%; object-fit: cover; }
+section.attr h3.title { position: absolute; left: 1.3021vw; top: 1.3021vw; color: #fff; font-family: "Heebo-Black"; font-size: 1.375em; line-height: 1.2;}
+section.attr li.desc { color: #fff; font-size: 0.875em; }
+section.attr ul.content { position: absolute; bottom: 0; width: 100%; height: 74px; background: rgba(0, 0, 0, 0.5); padding : 1.250em 0 0 1.250em; }
+
+section.attr button { position: absolute; right: 1.3021vw; top: 1.3021vw; z-index: 150; color: #fff; font-size: 1.125em; background: #000; padding: 0.188em 0.750em; border-radius: 50%; }
+section.attr button > a { color: #fff; }
+
+section.attr div.swiper-pagination { position: absolute; left: 0; bottom: 30px; width: 100%; height: 4px; background: #787878; }
+section.attr span.swiper-pagination-progressbar-fill { position: absolute; left: 0; bottom: 0; z-index: 1; width: 100%; height: 100%; transform-origin: left bottom; background: #fff;}
 
 
-	section.trailers button.dir_btns { position: absolute; top: 0; z-index: 10; width: 60px; height: 212px; }
-	section.trailers button.prev { left: 0; background: url("../images/btn_common_prev_D.png") no-repeat center center; background-size: 22px; }
-	section.trailers button.prev span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
-
-	
-	section.trailers button.next { right: 0; background: url("../images/btn_common_next_D.png") no-repeat center center; background-size: 22px; }
-	section.trailers button.next span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
+/*++++section.attr end++++*/
 
 
-
-/*++++section.dapluspick++++*/
-
-
-	section.dapluspick { overflow: hidden; margin-bottom: 120px; }
-	section.dapluspick ul { display: flex; align-items: stretch; width: 100%; height: 600px; }
-	section.dapluspick ul > li { overflow: hidden; display: inline-flex; position: relative; flex: 1 1 33.33%; transition: flex 0.2s; }
-		
-	section.dapluspick ul > li:nth-child(1) { background: url("../images/img_index_da+s_01_D.jpg") no-repeat center center; background-size: cover; color: #fff; }
-	section.dapluspick ul > li:nth-child(2) { background: url("../images/img_index_da+s_02_D.jpg") no-repeat center center; background-size: cover; }
-	section.dapluspick ul > li:nth-child(3) { background: url("../images/img_index_da+s_03_D.jpg") no-repeat center center; background-size: cover; color: #fff; }
-	
-	section.dapluspick ul > li:hover { flex: 1 1 50%; }
-
-	section.dapluspick ul > li::before { content: ""; display: block; position: absolute; left: 0; top: 0; z-index: 2; width: 100%; height: 100%; transition: background 0.2s; } 
-		
-	section.dapluspick ul > li:nth-child(1)::before { background: #6a1b2d; opacity: 0.4; }
-	section.dapluspick ul > li:nth-child(2)::before { background: #8fbeb9; opacity: 0.4; }
-	section.dapluspick ul > li:nth-child(3)::before { background: #b4aacb; opacity: 0.4; } 
-
-	section.dapluspick ul:hover > li::before { background: black; opacity: 0.7; }
-	section.dapluspick ul > li:hover::before { opacity: 0; }
-
-	section.dapluspick img.title { position: absolute; right: 50%; top: 50%; z-index: 3; transform: translate(50%, -50%); transition: right 0.2s, transform 0.2s; filter: drop-shadow(0 0 0.1em #999); }
-	section.dapluspick div.info { position: absolute; right: 5%; top: 60%; z-index: 2; width: 45%; text-align: right; opacity: 0; transform: translateY(20%); }
-	section.dapluspick p.desc { margin-bottom: 1.2em; font-size: 1em; }
-	section.dapluspick a.btn_more { border-color: #fff; color: #fff; }
-	section.dapluspick li a._B { border: 1px solid #000; color: #000; }
-
-	section.dapluspick ul li:hover img.title { right: -7%; transform: translate(0, -50%); }
-	section.dapluspick ul li:hover div.info { opacity: 1; transform: translateY(0); transition: opacity 0.4s 0.1s, transform 0.4s 0.1s; }
+/*++++section.moreex++++*/
 
 
- /*++++section.event++++*/
+section.moreex { overflow: hidden; position: relative; background: #f3f4df; padding: 70px 0; width:100vw; height: 845px; overflow: hidden; }
+section.moreex div.inner_wrap { padding: 0 6.25vw; }
+section.moreex h2 { margin-left: 6.25vw; margin-bottom: 30px; }
+section.moreex h3.title { font-weight: bold; font-family: "Heebo-Medium"; font-size: 1em; margin: 0.625em 0 0 0.625em; line-height: 1.5; }
+section.moreex p.content { margin: 0 0.625em; font-family: "Heebo-Regular"; font-size: 1em; word-break: break-all; }
+section.moreex button.more { position: absolute; float: right; right: 10px; bottom: 15px; }
 
-	section.event { overflow: hidden; margin-bottom: 120px; }
-	section.event ul { width: 1180px; height: 590px; }
-	section.event ul li { display: inline-block; }
-	section.event ul li > a { display: block; width: 100%; height: 100%; }
-	section.event button.dir_btns { display: none; }
+section.moreex div.inner_wrap { width: 100%; height: 100%; }
+section.moreex div.img_wrap { overflow: hidden; width: 100%; height:50%; }
+section.moreex div.img_wrap img { display: block; width: 100%; height:100%; object-fit: cover; }
+
+section.moreex div.more_main { position: relative; width: 100%; height: 178px; }
+section.moreex div.more_main div.img_wrap { height: 100%; }
+section.moreex div.more_main img {display: block; width: 100%; height: 100%; object-fit: cover; }
+
+section.moreex div.container { position: absolute; left:0; bottom: 0; width: 100%; height: 32%; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.83em; }
+section.moreex div.container h3.title span { display: block; font-size: 0.75em; }
+section.moreex div.container p.content { display: none; }
+
+section.moreex div.sub_ex { position: relative; left: 0; top: 0; width: 87.5vw; height: 400px; margin-top: 10px; transition: 0.3s ease; }
+section.moreex div.sub { opacity: 0; position: absolute; width:100%; height: 400px; border: 1px solid #1d1d1d; }
+section.moreex div.sub_ex div.sub.on { opacity: 1; }
+
+section.moreex div.pagination { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); margin-bottom: 70px; }
+section.moreex div.pagination > button { padding: 10px 7px; }
+section.moreex div.pagination > button > span { display: block; width: 15px; height: 15px; border: 1px solid #1d1d1d; border-radius: 3px; text-indent: 100%; white-space: nowrap; overflow: hidden; transition-duration: 0.2s; }
+section.moreex div.pagination > button.active > span { width: 30px; border-color: #1d1d1d; background: #1d1d1d; border-radius: 3px; }
+
+/*++++section.moreex end++++*/
+
+
+/*++++section.info++++*/
+
+section.info { overflow: hidden; position: relative; margin: 70px 0 70px 0; }
+section.info div.inner_wrap { padding: 0 6.25vw; }
+section.info h2 { margin-left: 6.25vw; }
+
+section.info table { width: 87.5vw; table-layout: fixed; height: 102px; border: 1px solid #1d1d1d; margin-top: 30px; color: #555a60; }
+th.title { padding: 2.6042vw; font-size: 1em; color: #555a60; }
+section.info th.add { text-align: right; } 
+section.info th.add a { padding: 2.6042vw;  font-size: 1em; color: #555a60; }
+section.info td.content {overflow: hidden; display: inline-block; max-width: 100%; padding-left: 2.6042vw; white-space: nowrap; text-overflow: ellipsis; vertical-align: middle; }
+section.info td.content a { font-size: 0.83em; color: #555a60; }
+section.info td.date { padding-right: 2.6042vw; font-size: 0.83em; color: #555a60; text-align: right;}
+section.info div.inner_wrap td { padding-bottom: 0.7813vw; } 
+section.info div.inner_wrap tr:last-child { height: 7.1615vw; }
+
+section.info div.mobile_app { width: 87.5vw; height: 174px; margin-top: 10px; background: #787878; }
+section.info div.mobile_app ul { position: relative; color: #fff; }
+section.info div.mobile_app ul li { padding: 0.3906vw 2.6042vw; font-size: 0.83em; }
+section.info div.mobile_app ul li a { display: block; width: 87.5vw; color: #fff; }
+
+section.info div.mobile_app ul h3 { padding: 2.6042vw 0 2.6042vw 2.6042vw; font-size: 1em; }
+section.info div.mobile_app ul h3 strong { color: #ffa3a3; }
+
+section.info th.title { text-align: left; }
+section.info ul.etc_wrap { clear: both; width: 87.5vw; padding-top: 10px;}
+section.info ul.etc_wrap li { position: relative; float: left; width: 50%; height: 127px; }
+section.info ul.etc_wrap li a { position: absolute; top: 24%; display: block; width: 100%; text-align: center; font-family: "Heebo-Medium"; font-size: 0.938em; color: #fff; } 
+section.info ul.etc_wrap li::after { content:""; position: absolute; top: 100%; left: 50%; transform: translate(-50%, -90%); width: 77px; height: 78px; }
+section.info ul.etc_wrap li:nth-child(1) { margin: 0 5px 10px 0; width: calc(50% - 5px); background: #ffa3a3}
+section.info ul.etc_wrap li:nth-child(1)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -56px -375px; } 
+section.info ul.etc_wrap li:nth-child(2) { margin: 0 0 10px 5px; width: calc(50% - 5px); background: #3f7dd3;}
+section.info ul.etc_wrap li:nth-child(2)::after {content:""; background: url("../images/one_source_multi.png") no-repeat -136px -375px; }
+section.info ul.etc_wrap li:nth-child(3) { margin-right: 5px; width: calc(50% - 5px); background: #a17b9b;}
+section.info ul.etc_wrap li:nth-child(3)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -216px -375px; }
+section.info ul.etc_wrap li:nth-child(4) { margin-left: 5px; width: calc(50% - 5px); background: #25608a;}
+section.info ul.etc_wrap li:nth-child(4)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -295px -375px; }
+
+
+/*++++section.info end++++*/
+
+
 
 }
 
 
 
 
+/* ====== mobile(end) ====== */
 
-/* ===========desktop(end)============== */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!THRILLER KINGDOM TABLET!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ====== tablet(start) ====== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+
+
+/*++++section.visual++++*/
+
+section.visual { overflow: hidden; clear: both; position: relative; width: 100%; height: 100vh; }
+section.visual video { width: 100%; height: 100vh; object-fit: cover; z-index: 1; } 
+section.visual div.ticket_info { position: absolute; top: 70vh; left: 3.255208vw; z-index: 10; }
+section.visual h2 { padding-bottom: 1.3021vw; line-height: 0.9; font-family: "Heebo-Black"; font-size: 5.438em; color: #fff; animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+section.visual p { width: 50%; transition: all 0.6s; animation-name: fade_in_up; animation-duration: 2s; animation-iteration-count: 1; animation-fill-mode: forwards;  }
+section.visual p > a { display: block; padding: 10px; width: 100%; border-radius: 3px; background: #fff; font-family: "Heebo-Black"; font-size: 1.125em; text-align:center; }
+
+
+	@keyframes fade_in_up {
+		from { 
+		transform: translateY(50px); opacity: 0;
+		}
+
+		to { 
+		transform: translateY(0px); opacity: 1;
+		}
+	}
+	
+/*++++section.visual++++*/
+
+
+
+/*++++section.whatsnew++++*/
+
+
+section.whatsnew { overflow: hidden; margin-top: 100px; }
+section.whatsnew h2 { margin-left: 3.255208vw; margin-bottom: 30px; }
+section.whatsnew div.content_wrap { margin: 0 3.255208vw; margin-bottom: 100px; }
+  
+section.whatsnew div.view_mask { overflow: hidden; position: relative; width: 100%; height: 50vh; margin: 0 auto; }
+section.whatsnew ul.slides_wrap { position: absolute; left: 0; width: 600%; }
+section.whatsnew li.slides { position: relative; float: left; height: 40vh; }
+section.whatsnew li.slides img { display: block; width: 100%; height: 100%; object-fit: cover; }
+section.whatsnew li.slides div.info { display: inline-block; position: absolute; left: 0; bottom: 0; width: 100%; height: 11.0677vw; background: rgba(0, 0, 0, 0.7); color: #fff; }
+section.whatsnew li.slides h3.title { display: inline-block; position: relative; width: 34%; margin: 3.5573vw 4.0365vw 3.5573vw 8.5938vw; vertical-align: middle; font-family: "Heebo-Black"; font-size: 1.5em; line-height: 1.2;}
+section.whatsnew li.slides h3.title::after { content:""; position: absolute; right: -7px; top: 1px; bottom: 0; width: 1px; height: 26px; background: #fff; }
+section.whatsnew li.slides p.desc { display: inline-block; width: 50%; vertical-align: middle; line-height: 1.2; }
+ 
+section.whatsnew button.dir_btns { position: absolute; top: 45%; z-index: 10; width: 58px; height: 113px; transform: translateY(-50%); }
+section.whatsnew button.prev { left: 0; top: 38%; background: url("../images/arrow_pre_T.png") no-repeat center center; background-size: 100%; }
+section.whatsnew button.next { right: 0; top: 38%; background: url("../images/arrow_next_T.png") no-repeat center center; background-size: 100%; }
+
+section.whatsnew div.pagination { position: absolute; left: 0; bottom: 0; z-index: 20; width: 100%; height: 80px; text-align: center; }
+section.whatsnew div.pagination button { display: inline-block; padding: 0 14px;  }
+section.whatsnew div.pagination button > span { display: inline-block; width: 14px; height: 14px; border-radius: 50%; border: 1px solid #1d1d1d; }
+section.whatsnew div.pagination button:hover > span { background: #1d1d1d; }
+section.whatsnew div.pagination button.active > span { background: #1d1d1d; }
+
+
+/*++++section.whatsnew++++*/
+
+
+
+/*++++section.rides++++*/
+
+section.rides { overflow: hidden; padding: 100px 0; background: url(../images/img_index_rides_bg.jpg) no-repeat center center; background-size: cover; background-attachment: fixed; }
+section.rides h2 { margin-bottom: 30px; margin-left: 3.255208vw; }
+section.rides div.inner_wrap {  width: calc( 100% - ( 3.255208vw * 2)); margin: 0 3.255208vw; }
+
+section.rides div.xxx { position: relative; float: left; width: 100%; height: 220px; }
+section.rides div.xxx div.img_wrap img::after { content:""; position: absolute; left:0; top: 0; display: block; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); } 
+section.rides div.xxx div.img_wrap { overflow: hidden; position: relative; display: block; width: 100%; height: 100%; }
+section.rides div.xxx div.img_wrap img { display: block; width: 100%; height: 100%; z-index:1; }
+
+section.rides div.xxx h3.title { position: absolute; left: 43%; top: 37%; z-index:5; font-family:"Heebo-Black"; font-size: 3em; font-weight: bold; color: #fff; }
+section.rides div.xxx > button { position: absolute; left: 2%; bottom: 7%; z-index:5; }
+section.rides div.xxx > p.content { position: absolute; left: 22%; bottom: 5%; width: 77%; line-height: 1.2; z-index:5; color:#fff; }
+
+section.rides div.angry_w { float: left; width: 50%; height: 220px; }
+section.rides div.angry_w div.img_wrap { overflow: hidden; position: relative; width: 100%; height: 100%; }
+section.rides div.angry_w div.img_wrap img { position: relative; display: inline-block; width: 100%; height: 100%; object-fit: cover; z-index:1;  }
+section.rides div.angry_w div.img_wrap img::after { content:""; position: absolute; display:block; left:0; top:0; width: 100%; height:100%; z-index:1; background: rgba(63, 125, 211, 0.4); }
+
+section.rides div.angry_w h3.title { position: absolute; left: 38%; top: 35%; line-height: 1.2; z-index:5; font-family:"Heebo-Black"; font-size: 2em; font-weight: bold; color: #fff;}
+section.rides div.angry_w div.aw_content { position: relative; height: 180px; background: #3f7dd3; padding: 2.6042vw; line-height: 1.2;}
+section.rides div.angry_w div.aw_content::before { content:""; position: absolute; left: 46%; top: -25px; z-index: 10; width: 0; height: 0; border-style: solid; border-width: 0 25.5px 25px 25.5px; border-color: transparent transparent #3f7dd3 transparent;}
+section.rides div.angry_w div.aw_content > button.more { position:absolute; right: 25px; bottom: 25px; }
+
+section.rides div.tt_wrap { float: right; width: 50%; display: flex; flex-direction: column-reverse; }
+
+section.rides div.tt_content { position: relative; display: inline-block; width: 100%; height: 180px; line-height: 1.2; background: #ffa3a3; padding: 20px; vertical-align: top; }
+section.rides div.tt_content img { position: relative; display: inline-block; width: 100%; z-index: 1; vertical-align: top; }
+section.rides div.tt_content::after { content:""; position: absolute; right: 42%; top: -12%; z-index: 10; width: 0; height: 0; border-style: solid; border-width: 0 25.5px 25px 25.5px; border-color: transparent transparent #ffa3a3 transparent; }
+
+section.rides div.tt { overflow: hidden; position: relative; display: inline-block; width: 100%; height: 220px; }
+section.rides div.tt img { display: block; width: 100%; height: 100%; }
+section.rides div.tt img::before { content:""; position: absolute; left:0; top:0; z-index:1; display: block; width: 100%; height: 100%; background: rgba(255, 163, 163, 0.3); }
+section.rides div.tt h3.title { position: absolute; left: 32%; top: 35%; line-height: 1.2; text-align: center; z-index:5; font-family:"Heebo-Black"; font-size: 2em; font-weight: bold; color: #fff;}
+
+section.rides div.tt_content > button.more { position:absolute; right: 25px; bottom: 25px; }
+
+/*++++section.rides++++*/
+
+
+/*++++section.attr start++++*/
+
+section.attr { overflow:hidden; position: relative; background: #1d1d1d; padding-top: 100px; }
+section.attr div.inner_wrap { padding: 0 3.255208vw; }
+section.attr h2 { color: #fff; margin-left: 3.255208vw; margin-bottom: 30px;}
+section.attr h2::before { content: ""; background-color: #fff;}
+section.attr h2::after { content: ""; background-color: #fff;}
+section.attr h3.title { color: #fff; font-family: "Heebo-Black"; font-size: 1.375em; line-height: 1.2;}
+section.attr li.desc { color: #fff; font-size: 0.875em; }
+
+section.attr ul.attr_flex { display: flex; width: 100%; flex-basis: 0; margin-bottom: 100px; }
+section.attr ul.attr_flex li.attr { overflow: hidden; position: relative; width: 100%; height: 261px; }
+section.attr img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+section.attr ul.content { position: absolute; bottom: 0; width: 100%; height: 10.0677vw; background: rgba(0, 0, 0, 0.5); padding : 1.250em 0 0 1.250em; }
+section.attr h3.title { position: absolute; left: 1.3021vw; top: 1.3021vw; }
+section.attr button { position: absolute; right: 1.3021vw; top: 1.3021vw; z-index: 5; color: #fff; font-size: 1.125em; background: #000; padding: 0.188em 0.750em; border-radius: 50%; }
+section.attr button > a { color: #fff; }
+
+
+/*++++section.attr end++++*/
+
+
+/*++++section.moreex++++*/
+
+
+section.moreex { position: relative; background: #f3f4df; padding: 100px 0; overflow: hidden;}
+section.moreex div.inner_wrap { padding: 0 3.255208vw; }
+section.moreex h2 { margin-left: 3.255208vw; }
+section.moreex h3.title { font-weight: bold; font-family: "Heebo-Medium"; font-size: 1.125em; }
+section.moreex p.content { font-family: "Heebo-Regular"; font-size: 1em; word-break: break-all; }
+section.moreex button.more { float: right; }
+
+section.moreex div.inner_wrap { height: 100%; }
+section.moreex div.img_wrap { overflow: hidden; width: 100%; height: 100%; }
+section.moreex div.more_main { position: relative; width: 100%; margin-top: 30px; }
+section.moreex div.more_main img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+section.moreex div.container { position: absolute; top: 72%; width: 100%; height: 28%; padding-left: 0.938em; background: rgba(0, 0, 0, 0.6); }
+section.moreex div.container h3.title { color: #fff; padding-top: 10px; }
+section.moreex div.container h3.title span { font-size: 0.818em; }
+section.moreex div.container p.content { float: left; color: #fff; font-size: 0.75em; line-height: 1.2; }
+section.moreex div.container button.more { position: absolute; right: 1.250em; bottom: 1.250em; }
+
+section.moreex div.sub { position: relative; border: 1px solid #1d1d1d; width: 100%; height: 25.5208vw; margin: 10px; }
+section.moreex div.sub div.img_wrap { display: inline-block; width: 50%; }
+section.moreex div.sub img { display: block; width: 100%; height: 100%; object-fit: cover; }
+section.moreex div.sub h3.title { display: inline-block; position: absolute; top: 3%; margin: 0.625em; }
+section.moreex div.sub p.content { display: inline-block; position: absolute; top: 17%; width: 45%; margin: 10px; }
+section.moreex div.sub button.more { position: absolute; right: 20px; bottom: 20px; }
+section.moreex div.pagination { display: none; }
+
+
+
+/*++++section.moreex end++++*/
+
+/*++++section.info++++*/
+
+
+section.info { position: relative; margin-top: 100px; overflow: hidden;}
+section.info div.inner_wrap { width: calc( 100% - 5.2083vw ); }
+section.info h2 { margin-left: 3.255208vw; }
+
+section.info table { float: left; width: calc( 50% - 0.6510vw ) ; table-layout: fixed; height: 31.7708vw; border: 1px solid #1d1d1d; margin-top: 3.9063vw ; color: #555a60;}
+section.info th.title { padding: 2.6042vw; font-size: 1.25em; color: #555a60; text-align: left;}
+section.info th.add { text-align: right; } 
+section.info th.add a { padding: 2.6042vw;  font-size: 1.125em; color: #555a60;}
+section.info td.content {overflow: hidden; display: inline-block; max-width: 100%; padding-left: 2.6042vw; white-space: nowrap; text-overflow: ellipsis; vertical-align: middle; }
+section.info td.content a { font-size: 1em; color: #555a60; }
+section.info td.date { padding-right: 2.6042vw; font-size: 1em; color: #555a60; text-align: right;}
+section.info div.inner_wrap td { padding-bottom: 0.7813vw; } 
+section.info div.inner_wrap tr:last-child { height: 7.1615vw; }
+
+section.info div.mobile_app { float: right; width: calc( 50% - 0.6510vw ); height: 31.7708vw; margin-top: 3.9063vw; background: #787878; }
+section.info div.mobile_app ul { position: relative; color: #fff; }
+section.info div.mobile_app ul li { padding: 0.3906vw 2.6042vw; font-size: 1em; }
+section.info div.mobile_app ul li a { display: block; width: 100%; color: #fff; }
+
+section.info div.mobile_app ul h3 { padding: 2.6042vw 0 2.6042vw 2.6042vw; font-size: 1.25em; }
+section.info div.mobile_app ul h3 strong { color: #ffa3a3; }
+section.info div.mobile_app ul h3::after { content :""; position: absolute; top: 120px; right: 26px; width: 93px; height: 93px; background: url("../images/one_source_multi.png") no-repeat 0 -460px;}
+
+section.info ul.etc_wrap { clear: both; width: 100%; padding-top: 20px;}
+section.info ul.etc_wrap li { position: relative; float: left; width: calc((100% - 1.875em) / 4); height: 21.6146vw; }
+section.info ul.etc_wrap li a { display: block; width: 100%; text-align: center; font-family: "Heebo-Medium"; font-size: 1em; color: #fff; transform: translateY(200%); } 
+section.info ul.etc_wrap li::after { content:""; position: absolute; top: 100%; left: 50%; transform: translate(-50%, -90%); width: 100px; height: 100px; }
+section.info ul.etc_wrap li:nth-child(1) { background: #ffa3a3}
+section.info ul.etc_wrap li:nth-child(1)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -28px -265px; } 
+section.info ul.etc_wrap li:nth-child(2) { background: #3f7dd3;}
+section.info ul.etc_wrap li:nth-child(2)::after {content:""; background: url("../images/one_source_multi.png") no-repeat -130px -265px; }
+section.info ul.etc_wrap li:nth-child(3) { background: #a17b9b;}
+section.info ul.etc_wrap li:nth-child(3)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -232px -265px; }
+section.info ul.etc_wrap li:nth-child(4) { background: #25608a;}
+section.info ul.etc_wrap li:nth-child(4)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -334px -265px;  }
+section.info ul.etc_wrap li:not(:last-child) { margin-right: 0.625em; }
+
+/*++++section.info end++++*/
+
+
+
+
+
+
+
+
+
+}
+
+/* ====== tablet(end) ====== */
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!THRILLER KINGDOM DESKTOP!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ====== desktop(start) ====== */
+@media screen and (min-width: 1025px) {
+
+
+
+/*++++section.visual++++*/
+
+section.visual { overflow: hidden; clear: both; position: relative; width: 100%; height: 100vh;  }
+section.visual video { width: 100%; height: 100vh; object-fit: cover; z-index: 1; } 
+section.visual div.ticket_info { position: absolute; top: 59%; left: 12%; z-index: 10; }
+section.visual h2 { font-size: 6.25em; font-family: "Heebo-Black"; line-height: 1; color: #fff; animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+section.visual p { width: 35%; transition: all 0.6s; animation-name: fade_in_up; animation-duration: 2s; animation-iteration-count: 1; animation-fill-mode: forwards;  }
+section.visual p > a { display: block; padding: 10px; width: 100%; height: 100%; border-radius: 3px; background: #fff; font-family: "Heebo Medium"; font-size: 1.25em; text-align:center; transition: all 0.6s; }
+section.visual p:hover > a { background: #1d1d1d; opacity: 1; color: #fff; }
+
+
+	@keyframes fade_in_up {
+		from { 
+		transform: translateY(100px); opacity: 0;
+		}
+
+		to { 
+		transform: translateY(0px); opacity: 1;
+		}
+	}
+	
+/*++++section.visual++++*/
+
+
+
+/*++++section.whatsnew++++*/
+
+
+section.whatsnew { overflow: hidden; margin-top: 104px; }
+section.whatsnew div.content_wrap { margin-top: 50px; }
+
+section.whatsnew div.view_mask { overflow: hidden; position: relative; width: 100%; max-width: 1132px; height: 75vh; margin: 0 auto; }
+section.whatsnew ul.slides_wrap { position: absolute; left: 0; width: 500vw; }
+
+section.whatsnew li.slides { position: relative; width: 100%; max-width: 1132px; height: 100%; float: left; height: 60vh; }
+section.whatsnew li.slides img { display: block; width: 100%; height: 100%; object-fit: cover; }
+section.whatsnew li.slides div.info { display: inline-block; position: absolute; left: 0; bottom: 0; width: 100%; height: 80px; background: rgba(0, 0, 0, 0.7); color: #fff; }
+section.whatsnew li.slides h3.title { display: inline-block; position: relative; width: 25%; margin:25px 25px 25px 120px; vertical-align: middle; font-family: "Heebo-Black"; font-size: 1.5em; line-height: 1.2;}
+section.whatsnew li.slides h3.title::after { content:""; position: absolute; right: 10px; top: 2px; bottom: 0; width: 1px; height: 26px; background: #fff; }
+section.whatsnew li.slides p.desc { display: inline-block; width: 50%; vertical-align: middle; line-height: 1.2; }
+ 
+section.whatsnew button.dir_btns { position: absolute; top: 40%; z-index: 10; width: 58px; height: 113px; transform: translateY(-50%); }
+section.whatsnew button.prev { left: 0; background: url("../images/arrow_pre.png") no-repeat center center; background-size: 100%; }
+section.whatsnew button.next { right: 0; background: url("../images/arrow_next.png") no-repeat center center; background-size: 100%; }
+
+section.whatsnew div.pagination { position: absolute; left: 0; bottom: 0; z-index: 200; width: 100%; height: 80px; text-align: center; }
+section.whatsnew button.circle { padding: 5px; }
+section.whatsnew button.circle:not(:last-of-type) { margin-right: 10px; }
+section.whatsnew div.pagination button.circle > span { display: inline-block; width: 12px; height: 12px; border-radius: 50%; border: 1px solid #1d1d1d; }
+section.whatsnew button.circle:hover > span { background: #1d1d1d; }
+section.whatsnew button.circle.active > span { background: #1d1d1d; }
+
+
+/*++++section.whatsnew++++*/
+
+
+
+/*++++section.rides++++*/
+
+section.rides { overflow: hidden; margin-top: 104px; padding-top: 104px; height: 59.250em; background: url(../images/img_index_rides_bg.jpg) no-repeat center center; background-size: cover; background-attachment: fixed; }
+section.rides h2 { margin-bottom: 50px; }
+section.rides div.inner_wrap { position: relative; width: 100%; height: 662px; } 
+
+section.rides div.xxx { position: relative; float: left; width: 66.66667%; height: 331px; }
+section.rides div.xxx::after { content:""; position: absolute; left:0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); transition: all 0.6s; } 
+section.rides div.xxx div.img_wrap { overflow: hidden; width: 100%; height: 100%; position: relative; transition: all 0.6s; }
+section.rides div.xxx div.img_wrap img { display: block; width: 100%; height: 100%; z-index:1; transition: all 0.6s; }
+
+section.rides div.xxx h3.title { position: absolute; left: 43.333%; top: 33.333%; z-index:5; font-size: 3em; font-weight: bold; color: #fff; }
+section.rides div.xxx > button { position: relative; left: 15px; bottom: 45px; z-index:5; }
+section.rides div.xxx > p.content { position: relative; left: 21%; bottom: 78px; line-height: 1.2; width: 70%; z-index:5; color:#fff; }
+
+section.rides div.xxx:hover img { transform: scale(1.06); }
+section.rides div.xxx:hover::after { opacity: 0.3; background: #fff; } 
+section.rides div.xxx:hover h3.title { color: #fff; text-shadow: 1px 1px 2px #1d1d1d; }
+section.rides div.xxx:hover p.content { color: #fff; text-shadow: 1px 1px 2px #1d1d1d; }
+
+section.rides div.angry_w { float: right; width: 33.33333%; height: 662px; }
+section.rides div.angry_w div.img_wrap { overflow: hidden; position: relative; width: 100%; height: 331px; }
+section.rides div.angry_w div.img_wrap img { position: relative; display: inline-block; width: 100%; height: 100%; z-index:1; transition: all 0.6s; }
+section.rides div.angry_w div.img_wrap::after { content:""; position: absolute; left:0; top:0; width: 100%; height:331px; z-index:1; background: rgba(63, 125, 211, 0.4); transition: all 0.6s; }
+
+section.rides div.angry_w:hover div.img_wrap img { transform: scale(1.06);}
+section.rides div.angry_w:hover div.img_wrap::after { opacity: 0.3; background: #fff; }
+section.rides div.angry_w:hover h3.title { color: #fff; text-shadow: 1px 1px 2px #1d1d1d; }
+
+section.rides div.angry_w h3.title { position: absolute; left: 40%; top: 38%; line-height: 1.2; z-index:5; font-size: 2em; font-weight: bold; color: #fff;}
+section.rides div.angry_w div.aw_content { position: relative; width: 100%; height: 331px; padding: 3.75em 1.25em 1.25em 1.25em; background: #3f7dd3;  }
+section.rides div.angry_w div.aw_content::before { content:""; position: absolute; left: 46%; top: -25px; z-index: 10; width: 0; height: 0; border-style: solid; border-width: 0 25.5px 25px 25.5px; border-color: transparent transparent #3f7dd3 transparent;}
+section.rides div.angry_w div.aw_content > button.more { position:absolute; right: 25px; bottom: 25px; }
+
+section.rides div.tt_wrap { position: absolute; left: 0; bottom: 0; width: 66.66667%; height: 331px; }
+
+section.rides div.tt_content { position: relative; display: inline-block; width: 50%; height: 331px; padding: 3.75em 1.25em 1.25em 1.25em; background: #ffa3a3; vertical-align: top; }
+section.rides div.tt_content::after { content:""; position: absolute; right: -25px; top: 40%; z-index: 10; width: 0; height: 0; border-style: solid; border-width: 25.5px 0 25.5px 25px; border-color: transparent transparent transparent #ffa3a3; }
+
+section.rides div.tt { overflow: hidden; position: relative; display: inline-block; width: 50%; height:331px; }
+section.rides div.tt img { display: block; width: 100%; height: 100%; transition: all 0.6s; }
+section.rides div.tt h3.title { position: absolute; left: 33.3333%; top: 33.3333%; line-height: 1.2; text-align: center; z-index:5; font-size: 2em; font-weight: bold; color: #fff;}
+section.rides div.tt::before { content:""; position: absolute; left:0; top:0; z-index:1; width: 100%; height: 100%; background: rgba(255, 163, 163, 0.4); transition: all 0.6s; } 
+
+section.rides div.tt_wrap:hover div.tt::before { opacity: 0.3; background: #fff; }
+section.rides div.tt_wrap:hover h3.title { color: #fff; text-shadow: 1px 1px 2px #1d1d1d;  }
+section.rides div.tt_wrap:hover img { transform: scale(1.06); }
+
+section.rides div.tt_content > button.more { position:absolute; left: 25px; bottom: 25px; }
+
+/*++++section.rides++++*/
+
+
+/*++++section.attr start++++*/
+
+section.attr { overflow:hidden; position: relative; background: #1d1d1d; padding-top: 104px; }
+section.attr div.inner_wrap { margin-top: 50px; margin-bottom: 104px; }
+section.attr h2 { color: #fff; }
+section.attr h2::before { content: ""; background-color: #fff;}
+section.attr h2::after { content: ""; background-color: #ccc;}
+section.attr h3.title { color: #fff; font-family: "Heebo-Black"; font-size: 1.375em; line-height: 1.2;}
+section.attr li.desc { color: #fff; font-size: 1em; }
+
+section.attr ul.attr_flex { display: flex; width: 100%; height: 400px; flex-basis: 0; }
+section.attr ul.attr_flex li.attr { position: relative; width: 100%; height: 350px; margin-right: 20px;}
+section.attr img { display: block; width: 100%; height: 100%; object-fit: cover; transition: all 0.6s; }
+section.attr li.asylum { margin-right: 0;}
+
+section.attr li.horror { overflow: hidden; }
+section.attr li.horror:hover img { transform: scale(1.06); } 
+
+section.attr li.ab_school { overflow: hidden; }
+section.attr li.ab_school:hover img { transform: scale(1.06); } 
+
+section.attr li.asylum { overflow: hidden; }
+section.attr li.asylum:hover img { transform: scale(1.06); }
+
+section.attr ul.content { position: absolute; bottom: 0; width: 100%; height: 85px; background: rgba(0, 0, 0, 0.5); padding : 20px 0 0 20px; transform: translateY(100%); transition: all 0.6s; }
+section.attr h3.title { position: absolute; left: 10px; top: 10px; }
+section.attr button { position: absolute; right: 20px; bottom: 0; z-index: 5; color: #fff; font-size: 40px; transition: all 0.6s; }
+section.attr button > a { color: #fff; }
+
+section.attr button:hover { transform: rotate(45deg); }
+section.attr button:hover + ul.content { transform: translateY(0%); }
+
+
+/*++++section.attr end++++*/
+
+
+/*++++section.moreex++++*/
+
+
+section.moreex { position: relative; background: #f3f4df; padding-top: 104px; height: 1300px; overflow: hidden;}
+
+section.moreex h3.title { margin: 15px 0; font-weight:bold; font-family: "Heebo-Medium"; font-size: 1.375em; }
+section.moreex p.content { font-family: "Heebo-Regular"; font-size: 1em; word-break: break-all; }
+section.moreex button.more { float: right; }
+
+section.moreex div.inner_wrap { height: 100%; }
+section.moreex div.img_wrap { overflow: hidden; width: 100%; height: 100%; }
+section.moreex div.more_main { position: relative; width: 100%; padding-top: 77px; }
+section.moreex div.more_main img { display: block; width: 100%; height: 100%; object-fit: cover; transition: all 0.6s; }
+section.moreex div.more_main:hover img { transform: scale(1.06); }
+
+section.moreex div.container { position: absolute; top: 75%; width: 100%; height: 25%; padding-left: 15px; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 1em; }
+section.moreex div.container h3.title span { font-size: 0.818em; }
+section.moreex div.container p.content { line-height: 1.3; font-size: 0.818em; }
+section.moreex div.container button.more { position:absolute; right: 20px; bottom: 20px; }
+
+section.moreex div.sub { float: left; width: calc((100% - 40px) / 3); margin-top: 20px; }
+section.moreex div.sub img { display: block; width: 100%; object-fit: cover; transition: all 0.6s; }
+section.moreex div.sub:hover img { transform: scale(1.06); }
+section.moreex div.sub button.more { margin-top: 30px;}
+
+section.moreex div.sub:first-of-type { margin-right: 20px; }
+section.moreex div.sub:last-of-type { float: right; }
+section.moreex div.sub:last-of-type button.more { margin-top: 52px; }
+
+section.moreex div.pagination { display: none; }
+
+
+/*++++section.moreex end++++*/
+
+/*++++section.info++++*/
+
+
+section.info { position: relative; margin-top: 104px; overflow: hidden;}
+
+section.info table { float: left; width: calc((100% - 20px) /2); border: 1px solid #1d1d1d; margin-top: 65px; margin-right: 20px; color: #555a60;}
+th.title { padding: 44px 0 31px 31px; font-size: 1.25em; color: #555a60;}
+section.info th.add a { padding: 44px 28px 25px 0; font-size: 1.125em; color: #555a60;}
+section.info td.content a { padding: 0 0 0 28px; font-size: 1em; color: #555a60;}
+section.info td.date { padding-right: 28px; font-size: 1em; color: #555a60;}
+section.info div.inner_wrap td { padding-bottom: 8px; } 
+section.info div.inner_wrap tr:last-child { height: 54px; }
+
+section.info div.mobile_app { float: right; width: calc((100% - 20px) /2); height: 256px; margin-top: 65px; background: #787878; }
+section.info div.mobile_app ul { position: relative; color: #fff; }
+section.info div.mobile_app ul li { padding: 0.125em 2.5em; font-size: 1em; }
+section.info div.mobile_app ul li a { display: block; width: 100%; color: #fff; }
+
+section.info div.mobile_app ul h3 { padding: 2em 0 0.65em 2em; font-size: 1.25em; }
+section.info div.mobile_app ul h3 strong { color: #ffa3a3; }
+section.info div.mobile_app ul h3::after { content :""; position: absolute; top: 55px; right: 46px; width: 160px; height: 160px; background: url("../images/one_source_multi.png") no-repeat 0 -100px;}
+
+section.info th.title { text-align: left; }
+section.info ul.etc_wrap { clear: both; width: 100%; padding-top: 20px;}
+section.info ul.etc_wrap li { position: relative; float: left; width: calc((100% - 60px) /4); height: 256px; text-align: center; }
+section.info ul.etc_wrap li a { position: absolute; top: 35%; display: block; width: 100%; font-family: "Heebo-Medium"; font-size: 1.25em; color: #fff; } 
+section.info ul.etc_wrap li:hover::after { transform: scale(1.2); left: 50%; transform: translateX(-50%); }
+section.info ul.etc_wrap li::after { content:""; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 120px; height: 120px; transition: all 0.6s; }
+section.info ul.etc_wrap li:nth-child(1) { background: #ffa3a3}
+section.info ul.etc_wrap li:nth-child(1)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -170px 0; } 
+section.info ul.etc_wrap li:nth-child(2) { background: #3f7dd3;}
+section.info ul.etc_wrap li:nth-child(2)::after {content:""; background: url("../images/one_source_multi.png") no-repeat -295px 0; }
+section.info ul.etc_wrap li:nth-child(3) { background: #a17b9b;}
+section.info ul.etc_wrap li:nth-child(3)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -170px -125px; }
+section.info ul.etc_wrap li:nth-child(4) { background: #25608a;}
+section.info ul.etc_wrap li:nth-child(4)::after { content:""; background: url("../images/one_source_multi.png") no-repeat -295px -125px; }
+section.info ul.etc_wrap li:not(:last-child) { margin-right: 20px; }
+
+/*++++section.info end++++*/
+
+
+
+}
+
+/* ====== desktop(end) ====== */
+
+
+
+/*index css*/
+
+
+
