@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>THRILLER KINGDOM</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+	<!-- [if lt IE9]
+		<script src="js/html5shiv.js"></script>
+		<![endif] -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+
+</head>
+	
+<body>
+
+<!----navigation start---->
+
+	<header>
+		<div class="inner_wrap">
+			<h1><a href="create_tk.html"><span class="blind">Thriller Kingdom Logo</span></a></h1>
+			<label for="input_search" id="search_wrap" class="search_wrap">
+				<input type="search" id="input_search" list="search-options">
+				<datalist id = "search-options">
+					<option value="how to get tickets">
+					<option value="where to eat something">
+					<option value="attractions">
+					<option value="rides">
+					<option value="parade infomation">
+					<option value="performance">
+					<option value="special offers">
+					<option value="kingdom map">
+					<option value="how to download mobile app">
+				</datalist>
+				<button id="btn_search" class="btn_search">
+					<span class="blind">SEARCH</span>
+				</button>
+			</label>	
+
+
+			<div class="menu_wrap">
+				<button id="btn_menu" class="btn_menu"><span class="blind">MENU ALL</span></button>
+			</div>
+		</div>
+		<nav>
+			<ul class="sub_menu clearfix">
+				<li class="ticket">
+					<span class="btn_sub">TICKET</span>
+					<button class="sub_title original">Basic</button>
+					<ul class="first">	
+						<li class="sub_li"><a href="membership.html">Membership</a></li>
+						<li class="sub_li"><a href="oneday_pass.html">Oneday Pass</a></li>
+						<li class="sub_li"><a href="season_pass.html">Season Pass</a></li>
+					</ul>
+					<button class="sub_title original">Special</button>
+					<ul class="second">	
+						<li class="sub_li"><a href="group_tour.html">Group Tour</a></li>
+						<li class="sub_li"><a href="vip_tour.html">VIP Tour</a></li>
+						<li class="sub_li"><a href="visual_toul.html">Visual Tour</a></li>
+					</ul>
+				</li>
+				<li class="event">
+					<span class="btn_sub ">EVENTS</span>
+					<button class="sub_title original">Schedule</button>
+					<ul class="first">	
+						<li class="sub_li"><a href="live_show.html">Live Shows</a></li>
+						<li class="sub_li"><a href="parades.html">Parades</a></li>
+					</ul>
+					<button class="sub_title original">More fun</button>
+					<ul class="second">	
+						<li class="sub_li"><a href="resraurant.html">Restaurant</a></li>
+						<li class="sub_li"><a href="dining.html">Dining</a></li>
+						<li class="sub_li"><a href="shopandgifts.html">Shop & Gifts</a></li>
+					</ul>
+				</li>
+				<li class="story">
+					<span class="btn_sub">STORY</span>
+					<button class="sub_title original">Rides</button>
+					<ul class="first">	
+						<li class="sub_li"><a href="twitsted_thrill.html">Twisted Thrill</a></li>
+						<li class="sub_li"><a href="xxx.html">XXX</a></li>
+						<li class="sub_li"><a href="angry_waves.html">Angry Waves</a></li>
+					</ul>
+					<button class="sub_title original">Attractions</button>
+					<ul class="second">
+						<li class="sub_li"><a href="haunted_house.html">Haunted House</a></li>
+						<li class="sub_li"><a href="abandoned_school.html">Abandoned School</a></li>
+						<li class="sub_li"><a href="horror_nights.html">Horror Nights</a></li>
+					</ul>
+				</li>
+				<li class="about">
+					<span class="btn_sub">ABOUT</span>
+					<button class="sub_title original">Community</button>
+					<ul class="first">	
+						<li class="sub_li"><a href="faq.html">FAQ</a></li>
+						<li class="sub_li"><a href="gallary.html">Gallary</a></li>
+						<li class="sub_li"><a href="sns.html">SNS</a></li>
+					</ul>
+					<button class="sub_title original">News</button>
+					<ul class="second">	
+						<li class="sub_li"><a href="fast_pass.html">Fast Pass</a></li>
+						<li class="sub_li"><a href="mobile_app.html">Mobile App</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="rel">
+				<div class="hours clearfix">
+					<p>10:00a to 21:00p Everyday</p>
+				</div>
+				<div class="weather">
+					<div class="weather_sub">
+					<div class="CurrIcon"></div><!--
+					--><div class="CurrTemp"></div><!--
+					--><div class="City"></div>
+				</div>
+			</div>
+		</nav>	
+	</header>
+
+	<!----navigation end---->
+
+
+	<!----visual start---->
+
+	<section class="visual">
+		<div class="ticket_info">
+			<h2>GRAND<br>OPENING</h2>
+			<p><a href="#">BUY TICKETS</a></p>
+		</div>
+		<video autoplay="autoplay" muted loop="loop">
+			<source src="media/video/visual_main.mp4" type="video/mp4">
+			<source src="media/video/visual_main.webm" type="video/webm">
+			<source src="media/video/visual_main.ogv" type="video/ogg">
+			<object src="media/video/visual_main.swf" type="applicantion/x-shockwave-flash"></object>
+			" 이 영상을 보기 위해서는 HTML5를 지원하는 브라우저가 필요합니다. "
+		</video>
+	</section>
+
+	<!----visual end---->
+
+
+
+
+
+	<!----whatsnew start---->
+
+	<section class="whatsnew">
+		<div class="title_wrap">
+			<h2>WHAT'S NEW</h2>
+		</div>
+		<div class="content_wrap">
+			<div class="view_mask" id="slider">
+				<ul class="slides_wrap">
+					<li class="slides">
+						<a href="#"><img src="images/img_index_wn01.jpg" alt="visual 1">
+							<div class="info">
+								<h3 class="title">Willy-Willy Backdrop</h3>
+								<p class="desc">The thrill is unpredictable!<br>The backwards roller coaster that'll make you scream takes off.</p>
+							</div>
+						</a>
+					</li>
+					<li class="slides">
+						<a href="#">
+							<img src="images/img_index_wn02.jpg" alt="visual 2">
+							<div class="info">
+								<h3 class="title">Fantastic Worlds</h3>
+								<p class="desc">Celebrate a colourful fiesta to cheerful rhythms.<br>Relax in the splendidly decorated streets or warm yourself. </p>
+							</div>
+						</a>
+					</li>
+					<li class="slides">
+						<a href="#">
+							<img src="images/img_index_wn03.jpg" alt="visual 3">						
+							<div class="info">
+								<h3 class="title">The Haunted House</h3>
+								<p class="desc">Unavoidable horror will hit you by surprise!!<br>You will experience realistic 3D horror by putting on specially manufactured 3D glasses.</p>
+							</div>
+						</a>
+					</li>
+					<li class="slides">
+						<a href="#">
+							<img src="images/img_index_wn04.jpg" alt="visual 4">
+							<div class="info">
+								<h3 class="title">TARON</h3>
+								<p class="desc">TARON will whiz you through mysterious gorges,<br>makes you feel the mystical power of Klugheim!</p>
+							</div>
+						</a>
+					</li>	
+				</ul>
+				<button class="dir_btns prev"><span class="blind">prev</span></button>
+				<button class="dir_btns next"><span class="blind">next</span></button>
+				<div class="pagination">
+					<button class="circle active"><span><span class="blind">slide 01</span></span></button><!--
+					--><button class="circle"><span><span class="blind">slide 02</span></span></button><!--
+					--><button class="circle"><span><span class="blind">slide 03</span></span></button><!--
+					--><button class="circle"><span><span class="blind">slide 04</span></span></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!----whatsnew end---->
+	
+
+	<!--rides start-->
+
+	<section class="rides">
+		<div class="title_wrap">
+			<h2>RIDES</h2>
+		</div>
+		<div class="inner_wrap">
+			<div class="xxx">
+				<div class="img_wrap">
+					<picture>
+						<source srcset="images/img_index_rides_xxx_M.jpg" media="(max-width: 767px)">
+						<source srcset="images/img_index_rides_xxx_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+						<source srcset="images/img_index_rides_xxx_D.jpg" media="(min-width: 1025px)">
+						<img src="images/img_index_rides_xxx_D.jpg" alt="rides_xxx">
+					</picture>
+					<h3 class=title>XXX</h3>
+				</div>
+				<button class="more"><a href="#">Learn More</a></button>
+				<p class="content">Revolution of attraction, superb thrill through Feel and enjoy the ultimate speed from start to finish.</p>	
+			</div>
+			<div class="angry_w">
+				<div class="img_wrap">
+					<picture>
+						<source srcset="images/img_index_rides_angryw_M.jpg" media="(max-width: 767px)">
+						<source srcset="images/img_index_rides_angryw_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+						<source srcset="images/img_index_rides_angryw_D.jpg" media="(min-width: 1025px)">
+						<img src="images/img_index_rides_angryw_D.jpg" alt="angry waves">
+					</picture>
+					<h3 class="title">ANGRY<br>WAVES</h3>
+				</div>
+				<div class="aw_content">
+					<p>Experience the steepest ride in the world with a top speed of 104km per hour at a 77-degree angle. The world’s superb roller coaster will leave you with unforgettable memories.</p>
+					<button class="more"><a href="#">Learn More</a></button>
+				</div>
+			</div>
+			<div class="tt_wrap">
+				<div class="tt_content">
+						<p>An exciting, super-fast roller coaster, with spiral oblique rotations resembling twisted breadsticks and two complete 360 degree loop-to-loop sections! Enjoy an exhilarating rock 'n roll ride!</p>
+						<button class="more"><a href="#">Learn More</a></button>
+				</div><!--
+			--><div class="tt">
+					<picture>
+						<source srcset="images/img_index_rides_tt_M.jpg" media="(max-width: 767px)">
+						<source srcset="images/img_index_rides_tt_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+						<source srcset="images/img_index_rides_tt_D.jpg" media="(min-width: 1025px)">
+						<img src="images/img_index_rides_tt_D.jpg" alt="angry waves">
+					</picture>
+					<h3 class=title>TWISTED<br>THRILL</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--rides end-->
+
+
+
+
+
+	<!--attractions start-->
+
+	<section class="attr">
+		<div class="title_wrap">
+			<h2>ATTRACTIONS</h2>	
+		</div>	
+		<div class="inner_wrap clearfix swiper-container mySwiper01">
+			<ul class="attr_flex swiper-wrapper">
+				<li class="attr horror swiper-slide">
+					<img src="images/img_index_attr_horror.jpg" alt="attraction horror night">
+					<h3 class="title">HORROR<br>NIGHTS</h3>
+					<button><a herf="horrors.html">+</a></button>
+					<ul class="content">
+						<li class="desc">- Immersive Theme Experience</li>
+						<li class="desc">- Walking Distance: About 540m</li>
+					</ul>
+				</li><!--
+				--><li class="attr ab_school swiper-slide">
+					<img src="images/img_index_attr_ab_school.jpg" alt="attraction abandeoned school">
+					<h3 class="title">ABANDONED<br>SCHOOL</h3>
+					<button><a herf="ab_school.html">+</a></button>
+					<ul class="content">
+						<li class="desc">- Labyrinth Escape Experience</li>
+						<li class="desc">- Time required: About 20 min</li>
+					</ul>
+				</li><!--
+				--><li class="attr asylum swiper-slide">
+					<img src="images/img_index_attr_asylum.jpg" alt="attraction asylum 1966">
+					<h3 class="title">ASYLUM<br>1966</h3>
+					<button><a herf="asylum.html">+</a></button>
+					<ul class="content">
+						<li class="desc">- Strange Hospital Experience</li>
+						<li class="desc">- Walking Distance: About 900m</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="swiper-pagination">
+				<span class="swiper-pagination-progressbar-fill"><span class="blind">slide</span></span>
+			</div>
+		</div>
+	</section>
+
+	<!--attractions end-->
+
+<script>
+
+
+
+
+
+
+</script>
+
+
+
+	<!----moreex start---->
+
+	<section class="moreex">
+		<div class="title_wrap">
+			<h2>MORE EXPERIENCE</h2>
+		</div>
+		<div class="inner_wrap">
+			<div class="more_main">
+				<div class="img_wrap">
+					<picture>
+						<source srcset="images/img_index_moreex_mod_M.jpg" media="(max-width: 767px)">
+						<source srcset="images/img_index_moreex_mod_DT.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+						<source srcset="images/img_index_moreex_mod_DT.jpg" media="(min-width: 1025px)">
+						<img src="images/img_index_moreex_mod_DT.jpg" alt="march of demons">
+					</picture>
+				</div>
+				<div class="container clearfix">
+					<h3 class="title">MARCH OF DEMONS <span>(Day of the Dead, limited ~1/31)</span></h3>
+					<p class="content">Dancing the body Characters on parade.<br>The sultans of soul. Grab a seat. It’s all about to begin.</p>
+					<button class="more"><a href="special_festival.html">Learn More</a></button>
+				</div>
+			</div>
+			<div class="sub_ex">
+				<div class="sub on">
+					<div class="img_wrap">
+						<picture>
+							<source srcset="images/img_index_moreex_game_M.jpg" media="(max-width: 767px)">
+							<source srcset="images/img_index_moreex_game_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+							<source srcset="images/img_index_moreex_game.jpg" media="(min-width: 1025px)">
+							<img src="images/img_index_moreex_game.jpg" alt="game zone">
+						</picture>
+					</div>
+					<h3 class="title">GAME ZONE</h3>
+					<p class="content">Get rid of your stress via carnival games such as doll cranes, shooting games, arcadegames, racing games, karaoke, etc. It is a gamer’s paradise, where you can get all gifts with skill and luck!</p>
+					<button class="more"><a href="game.html">Learn More</a></button>
+				</div>
+				<div class="sub">
+					<div class="img_wrap">
+						<picture>
+							<source srcset="images/img_index_moreex_food_M.jpg" media="(max-width: 767px)">
+							<source srcset="images/img_index_moreex_food_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+							<source srcset="images/img_index_moreex_food.jpg" media="(min-width: 1025px)">
+							<img src="images/img_index_moreex_food.jpg" alt="food zone">
+						</picture>
+					</div>
+					<h3 class="title">SNACKS & BEVERAGES</h3>
+					<p class="content">Our quick and full-service restaurants offer everything from snacks like churros, soft pretzels, ice cream, and soda, even traditional korea foods to elegant gourmet cuisine.</p>
+					<button class="more"><a href="snacks.html">Learn More</a></button>
+				</div>
+				<div class="sub">
+					<div class="img_wrap">
+						<picture>
+							<source srcset="images/img_index_moreex_gift_M.jpg" media="(max-width: 767px)">
+							<source srcset="images/img_index_moreex_gift_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+							<source srcset="images/img_index_moreex_gift.jpg" media="(min-width: 1025px)">
+							<img src="images/img_index_moreex_gift.jpg" alt="gift zone">
+						</picture>					
+					</div>
+					<h3 class="title">GIFT SHOP</h3>
+					<p class="content">With so many great places to shop, you can take home more than just memories from Thriller Kingdom.</p>
+					<button class="more"><a href="gift.html">Learn More</a></button>
+				</div>
+			</div>
+			<div class="pagination">
+				<button class="square active"><span><span class="blind">slide01</span></span></button>
+				<button class="square"><span><span class="blind">slide02</span></span></button>
+				<button class="square"><span><span class="blind">slide03</span></span></button>
+			</div>
+		</div>
+	</section>
+
+	<!----moreex end---->
+		
+
+
+	<!----info start---->
+	<section class="info">
+		<div class="title_wrap">
+			<h2>INFORMATION</h2>
+		</div>
+		<div class="inner_wrap clearfix">
+			<table>
+				<thead>
+					<tr>
+						<th class="title">NOTICE</th>
+						<th class="add"><a href="add.html">+more</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="content"><a href="smart_q.html">Don't Line up yourself! [Smart Queuing]</a></td>
+						<td class="date">2022.01.01</td>
+					</tr>
+					<tr>
+						<td class="content"><a href="covid.html">Guidance for preventing the spread of COVID-19</a></td>
+						<td class="date">2022.01.01</td>
+					</tr>
+					<tr>
+						<td class="content"><a href="etequette.html">The Queuing Etiquette at Thriller Kingdom!</a></td>
+						<td class="date">2022.01.01</td>
+					</tr>
+					<tr>
+						<td class="content"><a href="bestdeal.html">The Best Deal for Ticket & fast-pass (online only)</a></td>
+						<td class="date">2022.01.01</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="mobile_app">
+				<ul class="clearfix">
+					<h3>Make the most of your visit<br>with <strong>the Thriller Kingdom App</strong>!</h3>
+					<li><a href="contactless.html">- Contactless Ticket Purchases</a></li>
+					<li><a href="mobile.html">- Mobile Order</a></li>
+					<li><a href="access.html">- Access the Virtual Queue</a></li>
+					<li><a href="check_times.html">- Check Wait Times</a></li>
+				</ul>
+		</div>
+		<ul class="etc_wrap clearfix">
+			<li><a href="new.html">NEWS</a></li>
+			<li><a href="promotion.html">PROMOTION</a></li>
+			<li><a href="event.html">EVENT</a></li>
+			<li><a href="transp.html">TRANSPORTATION</a></li>
+		</ul>
+	</div>
+	</section>
+<!----info end---->
+
+
+
+
+<!----footer start---->
+
+	<footer>
+		<div class="sns">
+			<p>CONNECT WITH US</p>
+			<div class="sns_wrap">
+				<a href="youtube.com"><span class="blind">youtube<span></a>
+				<a href="facebook.com"><span class="blind">facebook<span></a>
+				<a href="instagram.com"><span class="blind">instagram<span></a>
+				<a href="twitter.com"><span class="blind">twitter<span></a>
+			</div>
+		</div>
+		<hr>
+		<div class="info_wrap">
+			<ul class="clearfix">
+				<li>
+					<button>Kingdom & Tickets</button>
+					<ul>
+						<li><a href="#">Kingdom Photo Pass</a></li>
+						<li><a href="#">Offer and Discount</a></li>
+						<li><a href="#">Safety and Travel Update</a></li>
+					</ul>
+				</li>
+				<li>
+					<button>Things to Do</button>
+					<ul>
+						<li><a href="#">All Dining</a></li>
+						<li><a href="#">Celebrations</a></li>
+						<li><a href="#">Make Dining Reservations</a></li>
+					</ul>
+				</li>
+				<li>
+					<button>Help</button>
+					<ul>
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">Mobile App</a></li>
+					</ul>
+				</li>
+				<li>
+					<button>Contact Us</button>
+					<ul>
+						<li><a href="#">Phone Directory</a></li>
+						<li><a href="#">Email</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<hr>
+		<div class ="help clearfix">
+			<a href="#">Help & Guide Services</a>
+			<a href="#">Term of Use</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Rejection of Email Collection without Permission </a>
+			<a href="#">Site Map</a>
+			<a href="#">Crew Recruitment</a>
+		</div>
+		<p class="copyright">Copyright © Thriller Kingdom All rights reserved.</p>
+		<a id="arrow" href="index.html"><i class="fas fa-caret-square-up"><span class="blind">go to the top</span></i></a>
+	</footer>
+
+</body>
+
+</html>

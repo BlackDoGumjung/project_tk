@@ -86,43 +86,43 @@ button.more > a:hover { background: #1d1d1d; color: #fff; }
    header h1 { position: absolute; top: 4.25vw; left: 50%; transform: translateX(-50%); width: 67px; height: 50px; z-index: 100; }
    header h1 a { display: block; width: 100%; height: 100%; background: url("../images/tk_logo.png") no-repeat; background-size: cover; }
    
-   header div.search_wrap { position: absolute; top: 6.2500vw; left: 6.2500vw; z-index: 100; }
-   header div.search_wrap input { display: block; position: absolute; top: 7px; left: -20px; border-radius: 5px; width: 0; border: none; appearance: none; outline: none; transform: translateX(50px); transition: width 0.2s; }
-   header div.search_wrap[class ~= "inp"] > input { width: 70px; vertical-align: middle; }
-   header div.search_wrap button.btn_search { width: 26px; height: 26px; background: url("../images/icon_search.png") no-repeat;  background-size: cover;}
+   header label.search_wrap { position: absolute; top: 6.2500vw; left: 6.2500vw; z-index: 110; }
+   header label.search_wrap input { display: block; position: absolute; top: 7px; left: -20px; border-radius: 5px; width: 0; border: none; appearance: none; outline: none; transform: translateX(50px); transition: width 0.2s; }
+   header label.search_wrap[class ~= "inp"] > input { width: 70px; vertical-align: middle; }
+   header label.search_wrap button.btn_search { width: 26px; height: 26px; background: url("../images/icon_search.png") no-repeat;  background-size: cover;}
    
    header div.menu_wrap { position: absolute; top: 6.2500vw; right: 6.2500vw; z-index: 110; }
-   header div.menu_wrap button { width: 24px; height: 24px; background: url("../images/one_source_multi.png") no-repeat 0 -365px; }
-   header.on div.menu_wrap button { position: fixed; top: 7.2500vw; right: 6.2500vw; z-index: 110; background: url("../images/one_source_multi.png") no-repeat -33px -365px; z-index: 110; } 
+   header div.menu_wrap button { width: 27px; height: 27px; background: url("../images/img_common_btn_menu.png") no-repeat; background-size: cover; }
+   header.on div.menu_wrap button { position: fixed; top: 7.5vw; right: 6.2500vw; z-index: 110; background: url("../images/img_on_btn_menu.png") no-repeat; background-size: cover; z-index: 110; } 
    
-   header nav { width: 100vw; height: 100vh; position: fixed; left: 100%; top: 0; background: #1d1d1d; z-index: 101; padding: 55px 0 0 0; transform: translateX(0%); transition: transform 0.3s;}
+   header nav { width: 100vw; height: 100vh; position: fixed; left: 100%; top: 0; background: #1d1d1d; z-index: 101; padding: 75px 0 0 0; transform: translateX(0%); transition: transform 0.3s;}
    header.on nav { transform: translateX(-100%); }
-   nav ul.sub_menu { height: 100%; overflow-y: scroll; } 
-   nav ul.sub_menu li button.btn_sub { position: relative; padding-left: 20px; }
-   nav ul.sub_menu button.btn_sub::after { content:""; position: absolute; left:40px; bottom: 10px; width: 70px; height: 1px; background: #a17b9b; }
+   nav ul.sub_menu { overflow: hidden; height: 100%; overflow-y: scroll; } 
+   nav ul.sub_menu li span.btn_sub { position: relative; padding-left: 20px; }
+   nav ul.sub_menu span.btn_sub::after { content:""; position: absolute; left:40px; bottom: 10px; width: 70px; height: 1px; background: #a17b9b; }
 
    nav ul.sub_menu li > ul > li { display: block; width: 100%; height: 30px; line-height: 2; padding-left: 10px; } 
-   nav ul.sub_menu > li > ul { overflow: hidden; width: 100%; height: 30px; padding-left: 30px; transition: height 0.3s; }
+   nav ul.first, ul.second { overflow: hidden; width: 100%; height:0; padding-left: 30px; transition: height 0.3s; }
 
-	nav button.btn_sub { display: block; position: relative; width: 100%; height: 2.5em; font-family: "Heebo Black"; font-size: 1.125em; line-height: 2; color: #fff; } 
+	nav span.btn_sub { display: block; position: relative; width: 100%; height: 2.5em; font-family: "Heebo Black"; font-size: 1.125em; line-height: 2; color: #fff; }
 
 
-   nav li.ticket ul.first:nth-of-type(1)[class ~= active] { height: 120px; background: #a17b9b; }
-   nav li.ticket ul.second:nth-of-type(2)[class ~= active] { height: 120px; background: #a17b9b; }
+   nav ul.sub_menu li.ticket ul.first:nth-of-type(1)[class ~= active] { height: 90px; background: #a17b9b; }
+   nav ul.sub_menu li.ticket ul.second:nth-of-type(2)[class ~= active] { height: 90px; background: #a17b9b; }
    
-   nav li.event ul.first:nth-of-type(1)[class ~= active] { height: 90px; background: #a17b9b; }
-   nav li.event ul.second:nth-of-type(2)[class ~= active] { height: 120px; background: #a17b9b; }
+   nav ul.sub_menu li.event ul.first:nth-of-type(1)[class ~= active] { height: 60px; background: #a17b9b; }
+   nav ul.sub_menu li.event ul.second:nth-of-type(2)[class ~= active] { height: 90px; background: #a17b9b; }
    
-   nav li.story ul.first:nth-of-type(1)[class ~= active] { height: 120px; background: #a17b9b; }
-   nav li.story ul.second:nth-of-type(2)[class ~= active] { height: 120px; background: #a17b9b; }
+   nav ul.sub_menu li.story ul.first:nth-of-type(1)[class ~= active] { height: 90px; background: #a17b9b; }
+   nav ul.sub_menu li.story ul.second:nth-of-type(2)[class ~= active] { height: 90px; background: #a17b9b; }
    
-   nav li.about ul.first:nth-of-type(1)[class ~= active] { height: 120px; background: #a17b9b; }
-   nav li.about ul.second:nth-of-type(2)[class ~= active] { height: 90px; background: #a17b9b; }
+   nav ul.sub_menu li.about ul.first:nth-of-type(1)[class ~= active] { height: 90px; background: #a17b9b; }
+   nav ul.sub_menu li.about ul.second:nth-of-type(2)[class ~= active] { height: 60px; background: #a17b9b; }
 
 
-   nav button.sub_title { position: relative; width: 100%; height: 30px; font-size : 1em; font-family:"Heebo Medium"; color: #fff; }
-   nav button.sub_title::after { content: "∨"; position: absolute; right: 26px; font-size: 1em; transform: translateY(-10%); transition: transform 0.3s; }
-   nav ul.sub_menu > li > ul.active > button.sub_title::after { transform: rotate(180deg); } 
+   nav button.sub_title { position: relative; width: 100%; height: 30px; padding-left: 40px; font-size : 1em; font-family:"Heebo Medium"; color: #fff; }
+   nav button.original::after { content: "∨"; position: absolute; right: 30px; font-size: 1em; transform: translateY(-10%); }
+   nav ul.sub_menu button.change::after { content: "∧"; position: absolute; right: 30px; font-size: 1em; transform: translateY(-10%); } 
    nav ul.sub_menu li.sub_li a { display: block; width: 100%; height: 100%; font-size : 0.875em; color: #fff; }
    
    
@@ -196,26 +196,25 @@ button.more > a:hover { background: #1d1d1d; color: #fff; }
    header h1 { position: absolute; top: 2.3438vw; left: 50%; transform: translateX(-50%); width: 100px; height: 80px; z-index: 100; }
    header h1 a { display: block; width: 100%; height: 100%; background: url("../images/tk_logo.png") no-repeat; background-size: cover; }
    
-   header div.search_wrap { position: absolute; top: 3.255208vw; left: 3.255208vw; z-index: 100; }
-   header div.search_wrap input { display: block; position: absolute; top: 8px; left: 0; border-radius: 5px; width: 0; height: 20px; border: 0; appearance: none; outline: none; transform: translateX(50px); transition: width 0.2s; }
-   header div.search_wrap[class ~= "inp"] > input { width: 110px; vertical-align: middle; }
-   header div.search_wrap button.btn_search { width: 36px; height: 36px; background: url("../images/icon_search.png") no-repeat; background-size: cover;}
+   header label.search_wrap { position: absolute; top: 3.255208vw; left: 3.255208vw; z-index: 110;}
+   header label.search_wrap input { display: block; position: absolute; top: 8px; left: 0; border-radius: 5px; width: 0; height: 20px; border: 0; appearance: none; outline: none; transform: translateX(50px); transition: width 0.2s; }
+   header label.search_wrap[class ~= "inp"] > input { width: 110px; vertical-align: middle; }
+   header label.search_wrap button.btn_search { width: 36px; height: 36px; background: url("../images/icon_search.png") no-repeat; background-size: cover; }
    
    header div.menu_wrap { position: absolute; top: 28px; right: 3.255208vw; z-index: 110; }
    header div.menu_wrap button { width: 38px; height: 32px; background: url("../images/one_source_multi.png") no-repeat -41px -34px; }
    header.on div.menu_wrap button { position: fixed; top: 32px; right: 3.255208vw; z-index: 110; background: url("../images/one_source_multi.png") no-repeat -80px -36px; z-index: 110; } 
    
    header nav { width: 100vw; height: 100vh; position: fixed; left: 100%; top: 0; background: #1d1d1d; z-index: 101; padding: 60px 4.90625vw 0 4.90625vw; transform: translateX(0%); transition: transform 0.3s;}
-   header.on nav { transform: translateX(-100%); overflow-y: scroll; }
-   header nav ul.sub_menu { height: 86%; margin-top: 30px; } 
-   header nav ul.sub_menu li button.btn_sub { position: relative; width: 50%; margin-bottom: 15px;}
-   header nav ul.sub_menu button.btn_sub::after { content:""; position: absolute; left: 40px; bottom: 10px; width: 108px; height: 1px; background: #a17b9b; }
+   header.on nav { overflow: hidden; transform: translateX(-100%); overflow-y: scroll; }
+   header nav ul.sub_menu { height: 86%; margin-top: 20px; } 
+   header nav ul.sub_menu li span.btn_sub { position: relative; width: 50%; margin-bottom: 15px; }
+   header nav ul.sub_menu span.btn_sub::after { content:""; position: absolute; left: 40px; bottom: 10px; width: 108px; height: 1px; background: #a17b9b; }
    header nav ul.sub_menu > li { transform: translateX(30%);}
    header nav ul.sub_menu li > ul > li { display: block; width: 100%; padding-left: 10px; } 
-   header nav ul.sub_menu > li > ul { padding-left: 20px; margin-bottom: 10px;}
+   header nav ul.sub_menu > li > ul { padding-left: 20px; }
 
-   
-	nav button.btn_sub { display: block; position: relative; width: 100%; height: 2.5em; font-family:"Heebo Black";  font-size: 1.375em; line-height: 2; color: #fff;} 
+	nav span.btn_sub { display: block; position: relative; width: 100%; height: 2.5em; font-family:"Heebo Black";  font-size: 1.375em; line-height: 2; color: #fff;} 
 
 
    nav li.ticket { float: left; width: 50%; margin-bottom: 20px; }
@@ -225,10 +224,10 @@ button.more > a:hover { background: #1d1d1d; color: #fff; }
    nav li.sub_li { overflow: hidden; height: 30px; }
 
    
-   nav ul.sub_menu > li > ul { width: 100%; height: 140px; }
+   nav ul.sub_menu > li > ul { width: 100%; height: 110px; }
    
-   nav button.sub_title { position: relative; margin-bottom: 15px; font-size : 1.25em; font-family:"Heebo Medium"; color: #fff; }
-   nav button.sub_title::before { content: ""; position: absolute; left: -10px; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
+   nav button.sub_title { position: relative; margin-bottom: 15px; padding-left: 20px; font-size : 1.25em; font-family:"Heebo Medium"; color: #fff; }
+   nav button.sub_title::before { content: ""; position: absolute; left: 10px; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
    nav ul.sub_menu li.sub_li > a { font-size : 1em; color: #fff; }
    
    
@@ -298,13 +297,13 @@ header.on::before { display: block; }
 
 header h1 { position: absolute; top: 2.3438vw; left: 12%; width: 114px; height: 85px; z-index: 100; }
 header h1 a { display: block; width: 100%; height: 100%; background: url("../images/tk_logo.png") no-repeat; background-size: cover; }
-header div.search_wrap { position: absolute; top: 2.1vw; right: 7.8125vw; z-index: 110; margin-right: 10px; }
-header div.search_wrap input { display: block; position: absolute; top: 10px; right: 100px; border: 0; border-radius: 5px; width: 0; height: 20px; appearance: none; outline: none; transform: translateX(50px); transition: width 0.2s; }
-header div.search_wrap[class ~= "inp"] > input { width: 150px; vertical-align: middle; }
-header div.search_wrap button.btn_search { width: 38px; height: 38px; background: url("../images/icon_search.png") no-repeat; background-size: cover;}
-header div.menu_wrap { position: absolute; top: 2.3438vw; right: 4.4271vw; z-index: 110; }
-header div.menu_wrap button { width: 38px; height: 32px; background: url("../images/one_source_multi.png") no-repeat -41px -34px;}
-header.on button.btn_menu { position: fixed; top: 2.3438vw; right: 4.4271vw; z-index: 110; background: url("../images/one_source_multi.png") no-repeat -80px -36px; z-index: 110; } 
+header label.search_wrap { position: absolute; top: 2.2vw; right: 7.5vw; z-index: 110; }
+header label.search_wrap input { display: block; position: absolute; top: 10px; right: 110px; border: 0; border-radius: 5px; width: 0; height: 20px; appearance: none; outline: none; transform: translateX(50px); transition: width 0.2s; }
+header label.search_wrap[class ~= "inp"] > input { width: 150px; vertical-align: middle; }
+header label.search_wrap button.btn_search { width: 38px; height: 38px; background: url("../images/icon_search.png") no-repeat; background-size: cover; margin-right: 10px; }
+header div.menu_wrap { position: absolute; top: 2.2vw; right: 4.4vw; z-index: 110; }
+header div.menu_wrap button { width: 38px; height: 38px; background: url("../images/img_common_btn_menu.png") no-repeat; background-size: contain; }
+header.on button.btn_menu { width: 34px; height: 34px; position: fixed; top: 2.3vw; right: 5.4vw; z-index: 110; background: url("../images/img_on_btn_menu.png") no-repeat; background-size: cover; z-index: 110; } 
 
 nav { width: 78vw; height: 100vh; position: fixed; left: 100%; top: 0; background: #1d1d1d; z-index: 101; padding: 100px 3.90625vw 20px 3.90625vw; transform: translateX(0%); transition: transform 0.3s;}
 header.on nav { transform: translateX(-100%); background-color: #1d1d1d; }
@@ -312,19 +311,19 @@ header.on nav { transform: translateX(-100%); background-color: #1d1d1d; }
 nav ul.sub_menu { width: 80%; margin: 0 auto; margin-top: 30px; }
 nav ul.sub_menu > li { float: left; width: 25%; padding-left: 30px; }
 
-nav ul.sub_menu button.btn_sub { position: relative; margin-bottom: 35px; font-size: 1.563em; font-family:"Heebo Black"; color: #fff; }
+nav ul.sub_menu span.btn_sub { position: relative; font-size: 1.563em; font-family:"Heebo Black"; color: #fff; }
 
-nav ul.sub_menu button.btn_sub::before { content:""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; transition: all 0.3s ease-in-out; transition-duration: 0.5s; opacity: 0; background: #a17b9b; }
-nav ul.sub_menu > li:hover button.btn_sub::before { width: 100%; opacity: 1; }
+nav ul.sub_menu span.btn_sub::before { content:""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; transition: all 0.3s ease-in-out; transition-duration: 0.5s; opacity: 0; background: #a17b9b; }
+nav ul.sub_menu > li:hover span.btn_sub::before { width: 100%; opacity: 1; }
 
-nav ul.sub_menu > li > ul { width: 100%; height: 200px; }
-nav ul.sub_menu > li > ul.first { margin-bottom: 10px; } 
+nav ul.sub_menu > li > ul { width: 100%; height: 150px; }
+nav ul.sub_menu > li > ul.first { height: 150px; } 
 nav ul.sub_menu > li > ul > li { padding: 6px 0;}
 nav ul.sub_menu > li > ul > li:hover a { color: #a17b9b; }
 
-nav button.sub_title { position: relative; margin-bottom: 15px; padding-left: 10px; font-size : 1.125em; font-family:"Heebo Medium"; color: #fff; }
-nav ul.first:hover button.sub_title::before { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
-nav ul.second:hover button.sub_title::before { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
+nav button.sub_title { position: relative; display: block; margin: 15px 0; padding-left: 10px; font-size : 1.125em; font-family:"Heebo Medium"; color: #fff; }
+nav ul.sub_menu li:hover button.sub_title::before { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
+nav ul.sub_menu li:hover button.sub_title::before { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
 nav ul.sub_menu li.sub_li > a { padding-left: 20px; font-size : 0.85em; color: #fff; }
 
 

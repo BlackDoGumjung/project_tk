@@ -22,16 +22,17 @@ $(document).ready(function(){
 	var header = document.getElementsByTagName("header")[0];
 	var body = document.getElementsByTagName("body")[0];
 	var btn_menu = document.getElementById("btn_menu");
-	var sub_ul = $('.first, .second'); // 이게 되다니..
+	var sub_ul = $('.first, .second');
 	
 
 	btn_menu.onclick = function(){
 		header.classList.toggle("on");
 			if (header.classList.contains("on")){
 				body.classList.add('scroll_disable');
+				$('.sub_menu button').removeClass('change');
 				
 			} else {
-				$(sub_ul).removeClass('active'); // 이게되다니2222
+				$(sub_ul).removeClass('active'); 
 				body.classList.remove('scroll_disable');			
 		}
 	}
@@ -44,25 +45,8 @@ $(document).ready(function(){
 				});
 
 
-	//내비 세부 메뉴 열기(새로운 세부 메뉴 열면 사용하지 않는 건 닫히게)
-	$('.sub_title').on('click', function(e){
-
-	var ul = $(this).parent('ul');
-
-	if( e.target == this ){ 
-		if ($(ul).hasClass('active')) { 
-				$(ul).removeClass('active');
-		} else 
-		$('.sub_title').parent('ul').removeClass('active'),
-		$(ul).addClass('active'); 
-		} 
-	})
-
-
-
 	//오픈웨더 api (폰트어썸 연계) 
-		$(document).ready(function() {
-		let weatherIcon = {
+		let weatherIcon = { 
 			'01' : 'fas fa-sun',
 			'02' : 'fas fa-cloud-sun',
 			'03' : 'fas fa-cloud',
@@ -70,7 +54,7 @@ $(document).ready(function(){
 			'09' : 'fas fa-cloud-sun-rain',
 			'10' : 'fas fa-cloud-showers-heavy',
 			'11' : 'fas fa-poo-storm',
-			'13' : 'far fa-snowflake',
+			'13' : 'fas fa-snowflake',
 			'50' : 'fas fa-smog'
 		};
 		$.ajax({
@@ -86,7 +70,7 @@ $(document).ready(function(){
 				$('.City').append($city);
 				}
 			})
-		});
+
 
 
 	//화면 어느 정도 내려가면 위로 올리는 버튼 생성하기
@@ -154,7 +138,26 @@ else {
     else {
 
         
+	
+	//내비 세부 메뉴 열기(새로운 세부 메뉴 열면 사용하지 않는 건 닫히게)
+	$('.sub_title').on('click', function(e){ //버튼을 누르면 일어날 일
 
+		var ul = $(this).next('ul'); // 일단 바뀌는 버튼의 넥스트 ul (클래스 붙였다 떼는 애)
+			
+			if( e.target == this ){ //지금 누르는 버튼이 동일한데~
+				
+				if (ul.hasClass('active') && ul.prev('.sub_title').hasClass('change')) { //ul 이 이미 액티브 가졌으면 액티브 없애고, 버튼에 체인지 떼고,
+					ul.removeClass('active')
+					ul.prev('.sub_title').removeClass('change');
+	
+				} else { //ul이 액티브가 안가진 상태면 누른애만 액티브 넣고, 버튼도 누른 애만 체인지도 넣고
+					$('.sub_title').siblings('ul').removeClass('active');
+					ul.addClass('active');
+					$('.sub_menu button').removeClass('change');
+					$(this).addClass('change');
+				}
+			} 
+		});
 
     }
     
