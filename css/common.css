@@ -49,12 +49,12 @@
 }
 
 
-body { font-family: "Heebo Regular"; }
+body { font-family: "Heebo-Regular"; }
 hr { width: 100%; height: 1px; background: #445150; }
 div.inner_wrap { width: 100%; max-width: 1132px; margin: 0 auto; }
-h2 { font-family: "Heebo Black"; font-size: 1.875em; color: #444; }
+h2 { font-family: "Heebo-Black"; font-size: 1.875em; color: #444; }
 
-button.more > a { padding: 0.313em 1.25em; background: #fff; font-family: "Heebo Medium"; color: #1d1d1d; }
+button.more > a { padding: 0.313em 1.25em; background: #fff; font-family: "Heebo-Medium"; color: #1d1d1d; }
 button.more > a:hover { background: #1d1d1d; color: #fff; }
 
 .title_wrap { position: relative; width: 100%; max-width: 1132px; margin: 0 auto; }
@@ -214,7 +214,7 @@ button.more > a:hover { background: #1d1d1d; color: #fff; }
    header nav ul.sub_menu li > ul > li { display: block; width: 100%; padding-left: 10px; } 
    header nav ul.sub_menu > li > ul { padding-left: 20px; }
 
-	nav span.btn_sub { display: block; position: relative; width: 100%; height: 2.5em; font-family:"Heebo Black";  font-size: 1.375em; line-height: 2; color: #fff;} 
+	nav span.btn_sub { display: block; position: relative; width: 100%; height: 2.5em; font-family:"Heebo-Black";  font-size: 1.375em; line-height: 2; color: #fff;} 
 
 
    nav li.ticket { float: left; width: 50%; margin-bottom: 20px; }
@@ -226,7 +226,7 @@ button.more > a:hover { background: #1d1d1d; color: #fff; }
    
    nav ul.sub_menu > li > ul { width: 100%; height: 110px; }
    
-   nav button.sub_title { position: relative; margin-bottom: 15px; padding-left: 20px; font-size : 1.25em; font-family:"Heebo Medium"; color: #fff; }
+   nav button.sub_title { position: relative; margin-bottom: 15px; padding-left: 20px; font-size : 1.25em; font-family:"Heebo-Medium"; color: #fff; }
    nav button.sub_title::before { content: ""; position: absolute; left: 10px; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
    nav ul.sub_menu li.sub_li > a { font-size : 1em; color: #fff; }
    
@@ -311,7 +311,7 @@ header.on nav { transform: translateX(-100%); background-color: #1d1d1d; }
 nav ul.sub_menu { width: 80%; margin: 0 auto; margin-top: 30px; }
 nav ul.sub_menu > li { float: left; width: 25%; padding-left: 30px; }
 
-nav ul.sub_menu span.btn_sub { position: relative; font-size: 1.563em; font-family:"Heebo Black"; color: #fff; }
+nav ul.sub_menu span.btn_sub { position: relative; font-size: 1.563em; font-family:"Heebo-Black"; color: #fff; }
 
 nav ul.sub_menu span.btn_sub::before { content:""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; transition: all 0.3s ease-in-out; transition-duration: 0.5s; opacity: 0; background: #a17b9b; }
 nav ul.sub_menu > li:hover span.btn_sub::before { width: 100%; opacity: 1; }
@@ -321,7 +321,7 @@ nav ul.sub_menu > li > ul.first { height: 150px; }
 nav ul.sub_menu > li > ul > li { padding: 6px 0;}
 nav ul.sub_menu > li > ul > li:hover a { color: #a17b9b; }
 
-nav button.sub_title { position: relative; display: block; margin: 15px 0; padding-left: 10px; font-size : 1.125em; font-family:"Heebo Medium"; color: #fff; }
+nav button.sub_title { position: relative; display: block; margin: 15px 0; padding-left: 10px; font-size : 1.125em; font-family:"Heebo-Medium"; color: #fff; }
 nav ul.sub_menu li:hover button.sub_title::before { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
 nav ul.sub_menu li:hover button.sub_title::before { content: ""; position: absolute; left: 0; top: 0; width: 0; height: 0; border-style: solid; border-width: 10px 10px 0 0; border-color: #a17b9b transparent transparent transparent;}
 nav ul.sub_menu li.sub_li > a { padding-left: 20px; font-size : 0.85em; color: #fff; }
