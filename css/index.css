@@ -52,7 +52,7 @@ section.whatsnew h2 { margin-left: 6.2500vw; margin-bottom: 30px; }
 section.whatsnew div.content_wrap { margin: 0 6.2500vw; }
   
 section.whatsnew div.view_mask { overflow: hidden; position: relative; width: 100%; height: 50vh; margin: 0 auto; }
-section.whatsnew ul.slides_wrap { position: absolute; left: 0; width: 600%; }
+section.whatsnew ul.slides_wrap { position: absolute; left: 0; width: 400%; }
 section.whatsnew li.slides { position: relative; float: left; width: 87.5vw; height: 35vh; }
 
 section.whatsnew li.slides img { display: block; width: 100%; height: 100%; object-fit: fill; }
